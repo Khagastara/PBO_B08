@@ -8,21 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PBO_B08
+namespace PBO_B08.Views
 {
-    public partial class Login : Form
+    public partial class V_MembuatDataPasien : Form
     {
-        public Login()
+        public V_MembuatDataPasien()
         {
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void InitializeComponent()
         {
 
         }
