@@ -21,3 +21,28 @@ C:\Users\Owner\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_
 C:\Users\Owner\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
 C:\Users\Owner\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
 C:\Users\Owner\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
+C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.exe
+C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.deps.json
+C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.runtimeconfig.json
+C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.dll
+C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.pdb
+C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.AssemblyReference.cache
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Properties.Resources.resources
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalUtama.resources
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.V_Login.resources
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_MembuatDataPasien.resources
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.GenerateResource.cache
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfoInputs.cache
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfo.cs
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.CoreCompileInputs.cache
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.sourcelink.json
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.Up2Date
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.dll
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_B08.dll
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
+C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
