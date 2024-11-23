@@ -8,24 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PBO_B08
+namespace PBO_B08.Views
 {
-    public partial class V_Login : Form
+    public partial class V_HalPasien : UserControl
     {
-        public V_Login()
+        public V_HalPasien()
         {
             InitializeComponent();
-
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

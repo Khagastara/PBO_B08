@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PBO_B08")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2c9e1838a37872b9c9d5a1cb7628b2016ea4488")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33d55d072e6ef106521013c9f24fc249bdd39c52")]
 [assembly: System.Reflection.AssemblyProductAttribute("PBO_B08")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PBO_B08")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

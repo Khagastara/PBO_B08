@@ -83,6 +83,26 @@ namespace PBO_B08.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngegg1 {
+            get {
+                object obj = ResourceManager.GetObject("pngegg1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngegg2 {
+            get {
+                object obj = ResourceManager.GetObject("pngegg2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_vector_doctor_icon_png_image_4280176_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("pngtree-vector-doctor-icon-png-image_4280176-removebg-preview", resourceCulture);

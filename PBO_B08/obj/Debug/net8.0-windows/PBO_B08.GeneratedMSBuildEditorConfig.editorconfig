@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PBO_B08
-build_property.ProjectDir = C:\Project PBO\PBO_Project anyar\PBO_B08\
+build_property.ProjectDir = C:\Users\Owner\source\repos\PBO_B08\PBO_B08\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

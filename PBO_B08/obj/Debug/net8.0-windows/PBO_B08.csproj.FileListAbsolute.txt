@@ -1,5 +1,4 @@
 C:\Users\Owner\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.AssemblyReference.cache
-C:\Users\Owner\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Login.resources
 C:\Users\Owner\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Properties.Resources.resources
 C:\Users\Owner\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.GenerateResource.cache
 C:\Users\Owner\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.GeneratedMSBuildEditorConfig.editorconfig
@@ -46,3 +45,6 @@ C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_B08
 C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
 C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
 C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
+C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalUtama.resources
+C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.V_Login.resources
+C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_MembuatDataPasien.resources

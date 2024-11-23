@@ -16,5 +16,10 @@ namespace PBO_B08.Views
         {
             InitializeComponent();
         }
+
+        private void btnHomePage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
