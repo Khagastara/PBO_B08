@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PBO_B08.App.Model
 {
-    internal class M_Pasien
+    public class M_Pasien
     {
         [Key]
         public int idPasien { get; set; }

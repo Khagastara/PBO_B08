@@ -91,9 +91,9 @@ namespace PBO_B08.Views
         private void btnAddPasien_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddPasienForm addPasienForm = new AddPasienForm();
+            AddPasienForm pasienForm = new PasienForm();
 
-            if (addPasienForm.ShowDialog() == DialogResult.OK)
+            if (pasienForm.ShowDialog() == DialogResult.OK)
             {
                 LoadDataPasien();
             }
