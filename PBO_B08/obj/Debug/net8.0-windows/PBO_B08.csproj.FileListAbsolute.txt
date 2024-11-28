@@ -66,3 +66,14 @@ C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.so
 C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.dll
 C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_B08.dll
 C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
+C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.exe
+C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.deps.json
+C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.runtimeconfig.json
+C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.dll
+C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.pdb
+C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.Up2Date
+C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
+C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
