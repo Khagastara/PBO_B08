@@ -44,9 +44,11 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(224, 224, 224);
-            panel1.Location = new Point(241, 0);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(4, 4, 4, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1040, 720);
+            panel1.Size = new Size(1578, 841);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
@@ -55,18 +57,20 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(93, 31);
+            label1.Location = new Point(116, 39);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(128, 23);
+            label1.Size = new Size(154, 28);
             label1.TabIndex = 0;
             label1.Text = "MED-CHECK";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.pngtree_vector_doctor_icon_png_image_4280176_removebg_preview;
-            pictureBox1.Location = new Point(23, 17);
+            pictureBox1.Location = new Point(29, 21);
+            pictureBox1.Margin = new Padding(4, 4, 4, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(50, 50);
+            pictureBox1.Size = new Size(62, 62);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -84,9 +88,10 @@
             btnHomepage.Image = Properties.Resources.pngegg3;
             btnHomepage.ImageAlign = ContentAlignment.MiddleLeft;
             btnHomepage.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnHomepage.Location = new Point(12, 160);
+            btnHomepage.Location = new Point(15, 200);
+            btnHomepage.Margin = new Padding(4, 4, 4, 4);
             btnHomepage.Name = "btnHomepage";
-            btnHomepage.Size = new Size(220, 50);
+            btnHomepage.Size = new Size(275, 62);
             btnHomepage.TabIndex = 1;
             btnHomepage.Text = "Homepage";
             btnHomepage.UseVisualStyleBackColor = false;
@@ -103,8 +108,9 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(btnHomepage);
             panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(4, 4, 4, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(240, 720);
+            panel2.Size = new Size(300, 900);
             panel2.TabIndex = 2;
             // 
             // roundedButton4
@@ -117,9 +123,10 @@
             roundedButton4.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             roundedButton4.ForeColor = Color.White;
             roundedButton4.ImageAlignment = ContentAlignment.MiddleLeft;
-            roundedButton4.Location = new Point(12, 329);
+            roundedButton4.Location = new Point(15, 411);
+            roundedButton4.Margin = new Padding(4, 4, 4, 4);
             roundedButton4.Name = "roundedButton4";
-            roundedButton4.Size = new Size(220, 50);
+            roundedButton4.Size = new Size(275, 62);
             roundedButton4.TabIndex = 7;
             roundedButton4.Text = "Homepage";
             roundedButton4.UseVisualStyleBackColor = false;
@@ -135,9 +142,10 @@
             btnPemeriksaan.ForeColor = Color.White;
             btnPemeriksaan.Image = Properties.Resources._97q2oiq7i495p7gcc0h7q7js1n;
             btnPemeriksaan.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnPemeriksaan.Location = new Point(12, 272);
+            btnPemeriksaan.Location = new Point(15, 340);
+            btnPemeriksaan.Margin = new Padding(4, 4, 4, 4);
             btnPemeriksaan.Name = "btnPemeriksaan";
-            btnPemeriksaan.Size = new Size(220, 50);
+            btnPemeriksaan.Size = new Size(275, 62);
             btnPemeriksaan.TabIndex = 6;
             btnPemeriksaan.Text = "   Rekam Medis";
             btnPemeriksaan.UseVisualStyleBackColor = false;
@@ -153,9 +161,10 @@
             btnPasien.ForeColor = Color.White;
             btnPasien.Image = Properties.Resources.imgbin_patient_icon_blood_donation_icon_png;
             btnPasien.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnPasien.Location = new Point(12, 216);
+            btnPasien.Location = new Point(15, 270);
+            btnPasien.Margin = new Padding(4, 4, 4, 4);
             btnPasien.Name = "btnPasien";
-            btnPasien.Size = new Size(220, 50);
+            btnPasien.Size = new Size(275, 62);
             btnPasien.TabIndex = 5;
             btnPasien.Text = "Data Pasien";
             btnPasien.UseVisualStyleBackColor = false;
@@ -164,20 +173,22 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 111);
+            label2.Location = new Point(15, 139);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(38, 20);
+            label2.Size = new Size(45, 25);
             label2.TabIndex = 2;
             label2.Text = "Tool";
             // 
             // V_HalUtama
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
-            ClientSize = new Size(1262, 673);
+            ClientSize = new Size(1578, 841);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "V_HalUtama";
             Text = "V_HalUtama";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
