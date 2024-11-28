@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBO_B08.Views;
 
 namespace PBO_B08.Views
 {
@@ -90,14 +91,11 @@ namespace PBO_B08.Views
 
         private void btnAddPasien_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            AddPasienForm pasienForm = new PasienForm();
-
-            if (pasienForm.ShowDialog() == DialogResult.OK)
-            {
-                LoadDataPasien();
-            }
-            this.Show();
+         
+            V_AddPasien v_AddPasien = new V_AddPasien();
+            V_HalUtama.panel1.Controls.Clear();
+            V_HalUtama.panel1.Controls.Add(v_AddPasien);
+            v_AddPasien.Dock = DockStyle.Fill;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -126,12 +124,12 @@ namespace PBO_B08.Views
                         };
 
                         this.Hide();
-                        AddPasienForm addPasienForm = new AddPasienForm();
-                        addPasienForm.PopulateForm(pasien);
-                        if (addPasienForm.ShowDialog() == DialogResult.OK)
-                        {
-                            LoadDataPasien();
-                        }
+                        V_AddPasien v_AddPasien = new V_AddPasien();
+                        v_AddPasien.PasienForm(pasien);
+                        //if (v_AddPasien.ShowDialog() == DialogResult.OK)
+                        //{
+                        //    LoadDataPasien();
+                        //}
                         this.Show();
                     }
                 }

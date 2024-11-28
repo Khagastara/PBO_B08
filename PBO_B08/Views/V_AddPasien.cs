@@ -42,7 +42,7 @@ namespace PBO_B08.Views
 
         public void PasienForm(M_Pasien m_Pasien)
         {
-            LoadJenisKelamin();
+
 
             txtNamaPasien.Text = m_Pasien.namaPasien;
             if (cmbJenisKelamin.Items.Contains(m_Pasien.jenisKelamin))
