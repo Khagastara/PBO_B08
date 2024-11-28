@@ -188,7 +188,7 @@
 
         #endregion
 
-        private Panel panel1;
+        public static Panel panel1;
         private Label label1;
         private PictureBox pictureBox1;
         private customeToolBox.RoundedButton btnHomepage;

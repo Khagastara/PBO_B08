@@ -49,3 +49,5 @@ C:\Users\Owner\source\repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.run
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.pdb
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
+C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddPasien.resources
+C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalRekam.resources
