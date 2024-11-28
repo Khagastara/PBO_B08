@@ -12,6 +12,7 @@ namespace PBO_B08.Views
 {
     public partial class V_HalUtama : Form
     {
+        V_HalPasien v_HalPasien = new V_HalPasien();
         public V_HalUtama()
         {
             InitializeComponent();
@@ -20,6 +21,23 @@ namespace PBO_B08.Views
         private void btnHomePage_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnHomepage_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPasien_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            panel1.Controls.Add(v_HalPasien);
+            v_HalPasien.Dock = DockStyle.Fill;
         }
     }
 }

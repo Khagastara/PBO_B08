@@ -4,6 +4,7 @@ using PBO_B08.App.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Security.Cryptography;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,15 +15,15 @@ namespace PBO_B08.App.Context
     {
         public static DataTable All()
         {
-            string query = @"SELECT * FROM akun";
+            string query = @"SELECT * FROM Dokter";
             DataTable userData = queryExecutor(query);
             return userData;
         }
 
-        public M_Akun Validate(string username, string password)
+        public M_Dokter Validate(string username, string password)
         {
-            M_Akun accountLogin = null;
-            string query = @"SELECT * FROM akun WHERE username = @username AND password = @password";
+            M_Dokter accountLogin = null;
+            string query = @"SELECT * FROM Dokter WHERE Username = @username AND Password = @password LIMIT 1";
 
             NpgsqlParameter[] parameters =
             {
@@ -31,14 +32,14 @@ namespace PBO_B08.App.Context
             };
 
             using (NpgsqlDataReader reader = ExecuteReaderCommand(query, parameters))
-
+            {
                 if (reader.Read())
                 {
-                    accountLogin = new M_Akun(username, password);
-                    accountLogin.Username = (string)reader["username"];
-                    accountLogin.Password = (string)reader["password"];
-
-                };
+                    accountLogin = new M_Dokter(username, password);
+                    accountLogin.Username = (string)reader["Username"];
+                    accountLogin.Password = (string)reader["Password"];
+                }
+            }
             return accountLogin;
         }
     }

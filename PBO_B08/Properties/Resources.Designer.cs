@@ -73,6 +73,36 @@ namespace PBO_B08.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5bc27095163fc_acb8806cbcb85f44d5dbb27329cca6341 {
+            get {
+                object obj = ResourceManager.GetObject("5bc27095163fc-acb8806cbcb85f44d5dbb27329cca6341", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _97q2oiq7i495p7gcc0h7q7js1n {
+            get {
+                object obj = ResourceManager.GetObject("97q2oiq7i495p7gcc0h7q7js1n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgbin_patient_icon_blood_donation_icon_png {
+            get {
+                object obj = ResourceManager.GetObject("imgbin_patient-icon-blood-donation-icon-png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngegg {
             get {
                 object obj = ResourceManager.GetObject("pngegg", resourceCulture);
@@ -96,6 +126,16 @@ namespace PBO_B08.Properties {
         internal static System.Drawing.Bitmap pngegg2 {
             get {
                 object obj = ResourceManager.GetObject("pngegg2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngegg3 {
+            get {
+                object obj = ResourceManager.GetObject("pngegg3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

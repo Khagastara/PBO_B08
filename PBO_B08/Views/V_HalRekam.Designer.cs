@@ -1,6 +1,6 @@
 ﻿namespace PBO_B08.Views
 {
-    partial class V_HalPasien
+    partial class V_HalRekam
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,50 +29,26 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            btnAddPasien = new customeToolBox.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
-            dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(38, 121);
+            dataGridView1.Location = new Point(46, 111);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(935, 477);
+            dataGridView1.Size = new Size(943, 495);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // btnAddPasien
-            // 
-            btnAddPasien.BackColor = Color.FromArgb(4, 118, 208);
-            btnAddPasien.BorderColor = Color.Transparent;
-            btnAddPasien.BorderRadius = 20;
-            btnAddPasien.BorderWidth = 2;
-            btnAddPasien.FlatAppearance.BorderSize = 0;
-            btnAddPasien.FlatStyle = FlatStyle.Flat;
-            btnAddPasien.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAddPasien.ForeColor = Color.White;
-            btnAddPasien.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnAddPasien.Location = new Point(840, 648);
-            btnAddPasien.Name = "btnAddPasien";
-            btnAddPasien.Size = new Size(133, 38);
-            btnAddPasien.TabIndex = 1;
-            btnAddPasien.Text = "Tambah";
-            btnAddPasien.UseVisualStyleBackColor = false;
-            btnAddPasien.Click += btnAddPasien_Click;
-            // 
-            // V_HalPasien
+            // V_HalRekam
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(224, 224, 224);
-            Controls.Add(btnAddPasien);
             Controls.Add(dataGridView1);
-            Name = "V_HalPasien";
-            Size = new Size(1040, 720);
-            Load += V_HalPasien_Load;
+            Name = "V_HalRekam";
+            Size = new Size(1040, 640);
+            Load += V_HalRekam_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
@@ -80,6 +56,5 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private customeToolBox.RoundedButton btnAddPasien;
     }
 }

@@ -12,7 +12,7 @@ namespace PBO_B08.App.Core
     {
         // Properti credential database dan koneksinya
         private static readonly string DB_HOST = "localhost";
-        private static readonly string DB_DATABASE = "PBO-B8";
+        private static readonly string DB_DATABASE = "PBO_B8";
         private static readonly string DB_USERNAME = "postgres";
         private static readonly string DB_PASSWORD = "082143";
         private static readonly string DB_PORT = "5432";

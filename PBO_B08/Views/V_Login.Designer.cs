@@ -31,17 +31,17 @@
             customeToolBox.RoundedPanel roundedPanel1;
             customeToolBox.RoundedPanel roundedPanel2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(V_Login));
-            textBox1 = new TextBox();
+            usernameTextBox = new TextBox();
             pictureBox2 = new PictureBox();
-            textBox3 = new TextBox();
+            passwordTextBox = new TextBox();
             pictureBox3 = new PictureBox();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             label2 = new Label();
             label1 = new Label();
             panel2 = new Panel();
-            roundedButton1 = new customeToolBox.RoundedButton();
-            button2 = new Button();
+            btnLogin = new customeToolBox.RoundedButton();
+            btnLupaPass = new Button();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -62,20 +62,22 @@
             roundedPanel1.BorderColor = Color.White;
             roundedPanel1.BorderRadius = 20;
             roundedPanel1.BorderWidth = 2;
-            roundedPanel1.Controls.Add(textBox1);
+            roundedPanel1.Controls.Add(usernameTextBox);
             roundedPanel1.Controls.Add(pictureBox2);
             roundedPanel1.Location = new Point(194, 282);
             roundedPanel1.Name = "roundedPanel1";
             roundedPanel1.Size = new Size(472, 50);
             roundedPanel1.TabIndex = 7;
             // 
-            // textBox1
+            // usernameTextBox
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(64, 15);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(400, 20);
-            textBox1.TabIndex = 1;
+            usernameTextBox.BorderStyle = BorderStyle.None;
+            usernameTextBox.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            usernameTextBox.Location = new Point(64, 12);
+            usernameTextBox.Multiline = true;
+            usernameTextBox.Name = "usernameTextBox";
+            usernameTextBox.Size = new Size(400, 30);
+            usernameTextBox.TabIndex = 1;
             // 
             // pictureBox2
             // 
@@ -93,20 +95,22 @@
             roundedPanel2.BorderColor = Color.White;
             roundedPanel2.BorderRadius = 20;
             roundedPanel2.BorderWidth = 2;
-            roundedPanel2.Controls.Add(textBox3);
+            roundedPanel2.Controls.Add(passwordTextBox);
             roundedPanel2.Controls.Add(pictureBox3);
             roundedPanel2.Location = new Point(194, 376);
             roundedPanel2.Name = "roundedPanel2";
             roundedPanel2.Size = new Size(472, 50);
             roundedPanel2.TabIndex = 8;
             // 
-            // textBox3
+            // passwordTextBox
             // 
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Location = new Point(64, 16);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(400, 20);
-            textBox3.TabIndex = 1;
+            passwordTextBox.BorderStyle = BorderStyle.None;
+            passwordTextBox.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            passwordTextBox.Location = new Point(64, 12);
+            passwordTextBox.Multiline = true;
+            passwordTextBox.Name = "passwordTextBox";
+            passwordTextBox.Size = new Size(400, 30);
+            passwordTextBox.TabIndex = 1;
             // 
             // pictureBox3
             // 
@@ -164,10 +168,10 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(224, 224, 224);
-            panel2.Controls.Add(roundedButton1);
+            panel2.Controls.Add(btnLogin);
             panel2.Controls.Add(roundedPanel2);
             panel2.Controls.Add(roundedPanel1);
-            panel2.Controls.Add(button2);
+            panel2.Controls.Add(btnLupaPass);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label3);
@@ -177,34 +181,36 @@
             panel2.TabIndex = 3;
             panel2.Paint += panel2_Paint;
             // 
-            // roundedButton1
+            // btnLogin
             // 
-            roundedButton1.BackColor = Color.FromArgb(4, 118, 208);
-            roundedButton1.BorderColor = Color.Transparent;
-            roundedButton1.BorderRadius = 20;
-            roundedButton1.BorderWidth = 2;
-            roundedButton1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            roundedButton1.ForeColor = Color.White;
-            roundedButton1.Location = new Point(361, 471);
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(150, 45);
-            roundedButton1.TabIndex = 9;
-            roundedButton1.Text = "Login";
-            roundedButton1.UseVisualStyleBackColor = false;
+            btnLogin.BackColor = Color.FromArgb(4, 118, 208);
+            btnLogin.BorderColor = Color.Transparent;
+            btnLogin.BorderRadius = 20;
+            btnLogin.BorderWidth = 2;
+            btnLogin.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogin.ForeColor = Color.White;
+            btnLogin.ImageAlignment = ContentAlignment.MiddleLeft;
+            btnLogin.Location = new Point(361, 471);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(150, 45);
+            btnLogin.TabIndex = 9;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
-            // button2
+            // btnLupaPass
             // 
-            button2.BackColor = Color.FromArgb(224, 224, 224);
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.FromArgb(4, 118, 208);
-            button2.Location = new Point(517, 432);
-            button2.Name = "button2";
-            button2.Size = new Size(149, 29);
-            button2.TabIndex = 6;
-            button2.Text = "Lupa Password?";
-            button2.UseVisualStyleBackColor = false;
+            btnLupaPass.BackColor = Color.FromArgb(224, 224, 224);
+            btnLupaPass.FlatAppearance.BorderSize = 0;
+            btnLupaPass.FlatStyle = FlatStyle.Flat;
+            btnLupaPass.Font = new Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLupaPass.ForeColor = Color.FromArgb(4, 118, 208);
+            btnLupaPass.Location = new Point(517, 432);
+            btnLupaPass.Name = "btnLupaPass";
+            btnLupaPass.Size = new Size(149, 29);
+            btnLupaPass.TabIndex = 6;
+            btnLupaPass.Text = "Lupa Password?";
+            btnLupaPass.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -276,10 +282,10 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private Label label5;
-        private TextBox textBox1;
-        private Button button2;
+        private TextBox usernameTextBox;
+        private Button btnLupaPass;
         private customeToolBox.RoundedPanel roundedPanel1;
-        private TextBox textBox3;
-        private customeToolBox.RoundedButton roundedButton1;
+        private TextBox passwordTextBox;
+        private customeToolBox.RoundedButton btnLogin;
     }
 }
