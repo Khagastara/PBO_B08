@@ -1,5 +1,6 @@
 ﻿using PBO_B08.App.Context;
 using PBO_B08.App.Model;
+using PBO_B08.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,7 @@ namespace PBO_B08.Views
         private void V_HalPasien_Load(object sender, EventArgs e)
         {
             LoadDataPasien();
+            V_AddPasien.OnPasienUpdated += LoadDataPasien;
         }
 
         private void LoadDataPasien()
@@ -87,8 +89,6 @@ namespace PBO_B08.Views
 
         }
 
-
-
         private void btnAddPasien_Click(object sender, EventArgs e)
         {
          
@@ -118,7 +118,7 @@ namespace PBO_B08.Views
                             idPasien = (int)row["idPasien"],
                             namaPasien = row["namaPasien"].ToString(),
                             jenisKelamin = row["jenisKelamin"].ToString(),
-                            tanggalLahir = row["tanggalLahir"].ToString(),
+                            tanggalLahir = row["tanggalLahir"] != DBNull.Value ? Convert.ToDateTime(row["tanggalLahir"]) : DateTime.MinValue,
                             noTelepon = row["noTelepon"].ToString(),
                             Alamat = row["Alamat"].ToString()
                         };
