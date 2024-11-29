@@ -16,7 +16,7 @@ namespace PBO_B08.App.Model
         [Required]
         public string jenisKelamin { get; set; }
         [Required]
-        public string tanggalLahir { get; set; }
+        public DateTime tanggalLahir { get; set; }
         [Required]
         public string noTelepon { get; set; }
         [Required]

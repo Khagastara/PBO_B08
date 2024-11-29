@@ -37,7 +37,7 @@
             // 
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(38, 121);
+            dataGridView1.Location = new Point(38, 86);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(935, 477);
@@ -55,7 +55,7 @@
             btnAddPasien.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAddPasien.ForeColor = Color.White;
             btnAddPasien.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnAddPasien.Location = new Point(840, 648);
+            btnAddPasien.Location = new Point(840, 588);
             btnAddPasien.Name = "btnAddPasien";
             btnAddPasien.Size = new Size(133, 38);
             btnAddPasien.TabIndex = 1;
@@ -71,7 +71,7 @@
             Controls.Add(btnAddPasien);
             Controls.Add(dataGridView1);
             Name = "V_HalPasien";
-            Size = new Size(1040, 720);
+            Size = new Size(1024, 673);
             Load += V_HalPasien_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

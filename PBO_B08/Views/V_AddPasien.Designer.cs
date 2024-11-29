@@ -34,7 +34,7 @@
             roundedPanel5 = new customeToolBox.RoundedPanel();
             txtNoTelepon = new TextBox();
             roundedPanel4 = new customeToolBox.RoundedPanel();
-            txtTglLahir = new TextBox();
+            dateTglLahir = new DateTimePicker();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -71,7 +71,7 @@
             roundedPanel1.Controls.Add(roundedPanel2);
             roundedPanel1.Controls.Add(label2);
             roundedPanel1.Controls.Add(label1);
-            roundedPanel1.Location = new Point(98, 68);
+            roundedPanel1.Location = new Point(73, 68);
             roundedPanel1.Name = "roundedPanel1";
             roundedPanel1.Size = new Size(850, 480);
             roundedPanel1.TabIndex = 0;
@@ -127,20 +127,20 @@
             roundedPanel4.BorderColor = Color.Transparent;
             roundedPanel4.BorderRadius = 20;
             roundedPanel4.BorderWidth = 2;
-            roundedPanel4.Controls.Add(txtTglLahir);
+            roundedPanel4.Controls.Add(dateTglLahir);
             roundedPanel4.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             roundedPanel4.Location = new Point(41, 235);
             roundedPanel4.Name = "roundedPanel4";
             roundedPanel4.Size = new Size(450, 45);
             roundedPanel4.TabIndex = 4;
             // 
-            // txtTglLahir
+            // dateTglLahir
             // 
-            txtTglLahir.BorderStyle = BorderStyle.None;
-            txtTglLahir.Location = new Point(16, 9);
-            txtTglLahir.Name = "txtTglLahir";
-            txtTglLahir.Size = new Size(420, 25);
-            txtTglLahir.TabIndex = 1;
+            dateTglLahir.Location = new Point(19, 7);
+            dateTglLahir.Name = "dateTglLahir";
+            dateTglLahir.Size = new Size(417, 32);
+            dateTglLahir.TabIndex = 0;
+            dateTglLahir.ValueChanged += dateTglLahir_ValueChanged;
             // 
             // label5
             // 
@@ -275,6 +275,7 @@
             btnKembali.TabIndex = 2;
             btnKembali.Text = "Kembali";
             btnKembali.UseVisualStyleBackColor = false;
+            btnKembali.Click += btnKembali_Click;
             // 
             // V_AddPasien
             // 
@@ -285,7 +286,7 @@
             Controls.Add(btnTambah);
             Controls.Add(roundedPanel1);
             Name = "V_AddPasien";
-            Size = new Size(1040, 720);
+            Size = new Size(1024, 673);
             Load += V_AddPasien_Load;
             roundedPanel1.ResumeLayout(false);
             roundedPanel1.PerformLayout();
@@ -294,7 +295,6 @@
             roundedPanel5.ResumeLayout(false);
             roundedPanel5.PerformLayout();
             roundedPanel4.ResumeLayout(false);
-            roundedPanel4.PerformLayout();
             roundedPanel3.ResumeLayout(false);
             roundedPanel2.ResumeLayout(false);
             roundedPanel2.PerformLayout();
@@ -316,10 +316,10 @@
         private customeToolBox.RoundedPanel roundedPanel5;
         private TextBox txtNoTelepon;
         private customeToolBox.RoundedPanel roundedPanel4;
-        private TextBox txtTglLahir;
         private ComboBox cmbJenisKelamin;
         private TextBox txtNamaPasien;
         private customeToolBox.RoundedButton btnTambah;
         private customeToolBox.RoundedButton btnKembali;
+        private DateTimePicker dateTglLahir;
     }
 }
