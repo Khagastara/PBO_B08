@@ -20,10 +20,12 @@ namespace PBO_B08.App.Context
             return userData;
         }
 
-        public M_Dokter Validate(string username, string password)
+        public M_Akun Validate(string username, string password)
         {
-            M_Dokter accountLogin = null;
-            string query = @"SELECT * FROM Dokter WHERE Username = @username AND Password = @password LIMIT 1";
+            M_Akun accountLogin = null;
+            string query = @"SELECT d.namadokter, d.emaildokter, a.username, a.password FROM dokter d
+                             JOIN akun a ON d.iddokter = a.iddokter 
+                             WHERE Username = @username AND Password = @password LIMIT 1";
 
             NpgsqlParameter[] parameters =
             {
@@ -35,7 +37,7 @@ namespace PBO_B08.App.Context
             {
                 if (reader.Read())
                 {
-                    accountLogin = new M_Dokter(username, password);
+                    accountLogin = new M_Akun(username, password);
                     accountLogin.Username = (string)reader["Username"];
                     accountLogin.Password = (string)reader["Password"];
                 }

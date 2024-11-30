@@ -41,7 +41,7 @@ namespace PBO_B08
         private void btnLogin_Click(object sender, EventArgs e)
         {
             C_Login cLogin = new C_Login();
-            M_Dokter login = cLogin.Validate(usernameTextBox.Text, passwordTextBox.Text);
+            M_Akun login = cLogin.Validate(usernameTextBox.Text, passwordTextBox.Text);
 
             if (login != null)
             {

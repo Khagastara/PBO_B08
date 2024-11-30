@@ -28,7 +28,7 @@ namespace PBO_B08.App.Context
 
             NpgsqlParameter[] parameters =
             {
-                new NpgsqlParameter("@namaPasien", NpgsqlTypes.NpgsqlDbType.Integer){Value = idPasien}
+                new NpgsqlParameter("@idPasien", NpgsqlTypes.NpgsqlDbType.Integer){Value = idPasien}
             };
 
             DataTable dataPasien = queryExecutor(query);
@@ -48,6 +48,18 @@ namespace PBO_B08.App.Context
             };
 
             commandExecutor(query, parameters);
+        }
+
+        public static DataTable searchByName(string namaPasien)
+        {
+            string query = $"SELECT * FROM pasien WHERE namaPasien ILIKE @namaPasien";
+            NpgsqlParameter[] parameters =
+            {
+                new NpgsqlParameter("@namaPasien", $"%{namaPasien}%")
+            };
+
+            DataTable dataPasien = queryExecutor(query, parameters);
+            return dataPasien;
         }
 
         public static void deletePasien(int idPasien)
