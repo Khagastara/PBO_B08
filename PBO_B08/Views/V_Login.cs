@@ -45,9 +45,16 @@ namespace PBO_B08
 
             if (login != null)
             {
-                this.Hide();
-                V_HalUtama halamanUtama = new V_HalUtama();
-                halamanUtama.Show();
+                try
+                {
+                    this.Hide();
+                    V_HalUtama halamanUtama = new V_HalUtama();
+                    halamanUtama.Show();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}");
+                }
             }
             else if (string.IsNullOrEmpty(usernameTextBox.Text) || string.IsNullOrEmpty(passwordTextBox.Text))
             {
