@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 
 namespace PBO_B08.App.Model
 {
-    internal class M_Akun
+    public class M_Akun
     {
         public M_Akun(string username, string password)
         {
-            Username = username;
-            Password = password;
+            username = username;
+            password = password;
         }
 
         [ForeignKey("M_Dokter")]
         public int idDokter { get; set; }
         [Required]
-        public string Username { get; set; }
+        public string username { get; set; }
         [Required]
-        public string Password { get; set; }
+        public string password { get; set; }
     }
 }
