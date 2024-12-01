@@ -103,6 +103,56 @@ namespace PBO_B08.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgbin_patient_icon_blood_donation_icon_png1 {
+            get {
+                object obj = ResourceManager.GetObject("imgbin_patient-icon-blood-donation-icon-png1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgbin_patient_icon_blood_donation_icon_png2 {
+            get {
+                object obj = ResourceManager.GetObject("imgbin_patient-icon-blood-donation-icon-png2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logout_icon {
+            get {
+                object obj = ResourceManager.GetObject("Logout icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Medicine_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Medicine Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Medicine_Icon1 {
+            get {
+                object obj = ResourceManager.GetObject("Medicine Icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngegg {
             get {
                 object obj = ResourceManager.GetObject("pngegg", resourceCulture);
@@ -156,6 +206,46 @@ namespace PBO_B08.Properties {
         internal static System.Drawing.Bitmap pngwing_com {
             get {
                 object obj = ResourceManager.GetObject("pngwing.com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Profile_icon {
+            get {
+                object obj = ResourceManager.GetObject("Profile icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Profile_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("Profile icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Profile_icon2 {
+            get {
+                object obj = ResourceManager.GetObject("Profile icon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Profile_icon3 {
+            get {
+                object obj = ResourceManager.GetObject("Profile icon3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
