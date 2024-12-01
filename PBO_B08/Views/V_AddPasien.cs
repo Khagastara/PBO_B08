@@ -118,9 +118,9 @@ namespace PBO_B08.Views
                 ClearTextBox();
 
                 V_HalPasien v_HalPasien = new V_HalPasien();
-                V_HalUtama v_halUtama = new V_HalUtama();
-                v_halUtama.panel1.Controls.Clear();
-                v_halUtama.panel1.Controls.Add(v_HalPasien);
+                V_HalUtama.panel1.Controls.Clear();
+                V_HalUtama.panel1.Controls.Add(v_HalPasien);
+                v_HalPasien.Dock = DockStyle.Fill;
             }
             catch (Exception ex)
             {
@@ -136,9 +136,9 @@ namespace PBO_B08.Views
         private void btnKembali_Click(object sender, EventArgs e)
         {
             V_HalPasien v_HalPasien = new V_HalPasien();
-            V_HalUtama v_halUtama = new V_HalUtama();
-            v_halUtama.panel1.Controls.Clear();
-            v_halUtama.panel1.Controls.Add(v_HalPasien);
+            V_HalUtama.panel1.Controls.Clear();
+            V_HalUtama.panel1.Controls.Add(v_HalPasien);
+            v_HalPasien.Dock = DockStyle.Fill;
         }
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)

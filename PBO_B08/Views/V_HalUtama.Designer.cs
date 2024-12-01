@@ -239,7 +239,7 @@
         private Label label2;
         private customeToolBox.RoundedButton roundedButton4;
         private customeToolBox.RoundedButton btnPemeriksaan;
-        public Panel panel1;
+        public static Panel panel1;
         private customeToolBox.RoundedButton roundedButton1;
         private customeToolBox.RoundedButton roundedButton2;
     }
