@@ -91,10 +91,10 @@ namespace PBO_B08.Views
         private void btnAddPasien_Click(object sender, EventArgs e)
         {
 
-            V_AddPasien v_AddPasien = new V_AddPasien();
-            V_HalUtama.panel1.Controls.Clear();
-            V_HalUtama.panel1.Controls.Add(v_AddPasien);
-            v_AddPasien.Dock = DockStyle.Fill;
+            V_HalPasien v_HalPasien = new V_HalPasien();
+            V_HalUtama v_halUtama = new V_HalUtama();
+            v_halUtama.panel1.Controls.Clear();
+            v_halUtama.panel1.Controls.Add(v_HalPasien);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
