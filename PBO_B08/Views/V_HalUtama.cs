@@ -35,6 +35,7 @@ namespace PBO_B08.Views
         private void btnPasien_Click(object sender, EventArgs e)
         {
             V_HalPasien v_HalPasien = new V_HalPasien();
+
             panel1.Controls.Clear();
             panel1.Controls.Add(v_HalPasien);
             v_HalPasien.Dock = DockStyle.Fill;
