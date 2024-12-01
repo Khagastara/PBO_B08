@@ -42,12 +42,6 @@ namespace PBO_B08.Views
                 }
 
                 dataGridView1.Columns.Clear();
-
-                DataGridViewTextBoxColumn nomorColumn = new DataGridViewTextBoxColumn();
-                nomorColumn.HeaderText = "No";
-                nomorColumn.Name = "Nomor";
-                dataGridView1.Columns.Add(nomorColumn);
-
                 dataGridView1.DataSource = dataPasien;
 
                 if (dataGridView1.Columns["idPasien"] != null) dataGridView1.Columns["idPasien"].Visible = false;
@@ -56,11 +50,17 @@ namespace PBO_B08.Views
                 if (dataGridView1.Columns["tanggalLahir"] != null) dataGridView1.Columns["tanggalLahir"].HeaderText = "Tanggal Lahir";
                 if (dataGridView1.Columns["Alamat"] != null) dataGridView1.Columns["Alamat"].HeaderText = "Alamat";
 
+                DataGridViewTextBoxColumn nomorColumn = new DataGridViewTextBoxColumn
+                {
+                    HeaderText = "No",
+                    Name = "Nomor"
+                };
+                dataGridView1.Columns.Insert(0, nomorColumn);
+
                 for (int i = 0; i < dataGridView1.Rows.Count; i++)
                 {
-                    dataGridView1.Rows[i].Cells["nomor"].Value = (i + 1).ToString();
+                    dataGridView1.Rows[i].Cells["Nomor"].Value = (i + 1).ToString();
                 }
-
 
                 DataGridViewButtonColumn updateButtonColumn = new DataGridViewButtonColumn
                 {
@@ -69,7 +69,6 @@ namespace PBO_B08.Views
                     Text = "Edit",
                     UseColumnTextForButtonValue = true
                 };
-
                 dataGridView1.Columns.Add(updateButtonColumn);
 
                 DataGridViewButtonColumn deleteButtonColumn = new DataGridViewButtonColumn
@@ -91,7 +90,7 @@ namespace PBO_B08.Views
 
         private void btnAddPasien_Click(object sender, EventArgs e)
         {
-         
+
             V_AddPasien v_AddPasien = new V_AddPasien();
             V_HalUtama.panel1.Controls.Clear();
             V_HalUtama.panel1.Controls.Add(v_AddPasien);
@@ -150,6 +149,69 @@ namespace PBO_B08.Views
                 {
                     MessageBox.Show($"Error saat menghapus pasien: {ex.Message}");
                 }
+            }
+        }
+
+        private void btnTelusuri_Click(object sender, EventArgs e)
+        {
+            string namaPasien = txtTelusuri.Text?.Trim(); 
+            if (string.IsNullOrEmpty(namaPasien))
+            {
+                LoadDataPasien();
+            }
+
+            try
+            {
+                DataTable dataPasien = C_Pasien.searchByName(namaPasien);
+
+                if (dataPasien == null || dataPasien.Rows.Count == 0)
+                {
+                    MessageBox.Show("No patients found with the specified name.", "Search Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                dataGridView1.Columns.Clear();
+                dataGridView1.DataSource = dataPasien;
+
+                if (dataGridView1.Columns["idPasien"] != null) dataGridView1.Columns["idPasien"].Visible = false;
+                if (dataGridView1.Columns["namaPasien"] != null) dataGridView1.Columns["namaPasien"].HeaderText = "Nama Pasien";
+                if (dataGridView1.Columns["jenisKelamin"] != null) dataGridView1.Columns["jenisKelamin"].HeaderText = "Jenis Kelamin";
+                if (dataGridView1.Columns["tanggalLahir"] != null) dataGridView1.Columns["tanggalLahir"].HeaderText = "Tanggal Lahir";
+                if (dataGridView1.Columns["Alamat"] != null) dataGridView1.Columns["Alamat"].HeaderText = "Alamat";
+
+                DataGridViewTextBoxColumn nomorColumn = new DataGridViewTextBoxColumn
+                {
+                    HeaderText = "No",
+                    Name = "Nomor"
+                };
+                dataGridView1.Columns.Insert(0, nomorColumn);
+
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    dataGridView1.Rows[i].Cells["Nomor"].Value = (i + 1).ToString();
+                }
+
+                DataGridViewButtonColumn updateButtonColumn = new DataGridViewButtonColumn
+                {
+                    Name = "Update",
+                    HeaderText = "Update",
+                    Text = "Edit",
+                    UseColumnTextForButtonValue = true
+                };
+                dataGridView1.Columns.Add(updateButtonColumn);
+
+                DataGridViewButtonColumn deleteButtonColumn = new DataGridViewButtonColumn
+                {
+                    Name = "Delete",
+                    HeaderText = "Delete",
+                    Text = "Delete",
+                    UseColumnTextForButtonValue = true
+                };
+                dataGridView1.Columns.Add(deleteButtonColumn);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error occurred during search: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
