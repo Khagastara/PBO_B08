@@ -41,13 +41,20 @@ namespace PBO_B08
         private void btnLogin_Click(object sender, EventArgs e)
         {
             C_Login cLogin = new C_Login();
-            M_Dokter login = cLogin.Validate(usernameTextBox.Text, passwordTextBox.Text);
+            M_Akun login = cLogin.Validate(usernameTextBox.Text, passwordTextBox.Text);
 
             if (login != null)
             {
-                this.Hide();
-                V_HalUtama halamanUtama = new V_HalUtama();
-                halamanUtama.Show();
+                try
+                {
+                    this.Hide();
+                    V_HalUtama halamanUtama = new V_HalUtama();
+                    halamanUtama.Show();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}");
+                }
             }
             else if (string.IsNullOrEmpty(usernameTextBox.Text) || string.IsNullOrEmpty(passwordTextBox.Text))
             {

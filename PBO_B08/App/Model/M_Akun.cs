@@ -8,15 +8,19 @@ using System.Threading.Tasks;
 
 namespace PBO_B08.App.Model
 {
-    internal class M_Pemeriksaan
+    public class M_Akun
     {
-        [Key]
-        public int idRekam { get; set; }
+        public M_Akun(string username, string password)
+        {
+            username = username;
+            password = password;
+        }
+
         [ForeignKey("M_Dokter")]
         public int idDokter { get; set; }
-        [ForeignKey("M_Pasien")]
-        public int idPasien { get; set; }
         [Required]
-        public DateOnly tanggalPemeriksaan { get; set; }
+        public string username { get; set; }
+        [Required]
+        public string password { get; set; }
     }
 }

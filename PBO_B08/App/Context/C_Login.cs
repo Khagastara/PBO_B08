@@ -20,25 +20,34 @@ namespace PBO_B08.App.Context
             return userData;
         }
 
-        public M_Dokter Validate(string username, string password)
+        public M_Akun Validate(string username, string password)
         {
-            M_Dokter accountLogin = null;
-            string query = @"SELECT * FROM Dokter WHERE Username = @username AND Password = @password LIMIT 1";
-
-            NpgsqlParameter[] parameters =
+            M_Akun accountLogin = null;
+            try
             {
+                string query = @"SELECT d.iddokter, d.namadokter, d.emaildokter, a.username, a.password 
+                         FROM dokter d JOIN akun a ON d.iddokter = a.iddokter 
+                         WHERE Username = @username AND Password = @password LIMIT 1";
+
+                NpgsqlParameter[] parameters =
+                {
                 new NpgsqlParameter("@username", username),
                 new NpgsqlParameter("@password", password)
-            };
+                };
 
-            using (NpgsqlDataReader reader = ExecuteReaderCommand(query, parameters))
-            {
-                if (reader.Read())
+                using (NpgsqlDataReader reader = ExecuteReaderCommand(query, parameters))
                 {
-                    accountLogin = new M_Dokter(username, password);
-                    accountLogin.Username = (string)reader["Username"];
-                    accountLogin.Password = (string)reader["Password"];
+                    if (reader.Read())
+                    {
+                        accountLogin = new M_Akun(username, password);
+                        accountLogin.username = (string)reader["username"];
+                        accountLogin.password = (string)reader["password"];
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Database error: {ex.Message}", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return accountLogin;
         }
