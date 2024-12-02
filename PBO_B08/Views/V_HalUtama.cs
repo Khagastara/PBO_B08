@@ -39,5 +39,10 @@ namespace PBO_B08.Views
             panel1.Controls.Add(v_HalPasien);
             v_HalPasien.Dock = DockStyle.Fill;
         }
+
+        private void V_HalUtama_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

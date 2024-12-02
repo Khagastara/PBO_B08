@@ -145,5 +145,10 @@ namespace PBO_B08.Views
         {
 
         }
+
+        private void roundedPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

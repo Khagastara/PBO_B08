@@ -62,7 +62,7 @@
             roundedPanel1.BorderWidth = 2;
             roundedPanel1.Controls.Add(usernameTextBox);
             roundedPanel1.Controls.Add(pictureBox2);
-            roundedPanel1.Location = new Point(242, 390);
+            roundedPanel1.Location = new Point(295, 367);
             roundedPanel1.Margin = new Padding(4);
             roundedPanel1.Name = "roundedPanel1";
             roundedPanel1.Size = new Size(590, 62);
@@ -98,7 +98,7 @@
             roundedPanel2.BorderWidth = 2;
             roundedPanel2.Controls.Add(passwordTextBox);
             roundedPanel2.Controls.Add(pictureBox3);
-            roundedPanel2.Location = new Point(242, 559);
+            roundedPanel2.Location = new Point(295, 550);
             roundedPanel2.Margin = new Padding(4);
             roundedPanel2.Name = "roundedPanel2";
             roundedPanel2.Size = new Size(590, 62);
@@ -121,7 +121,7 @@
             pictureBox3.Location = new Point(22, 8);
             pictureBox3.Margin = new Padding(4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(50, 50);
+            pictureBox3.Size = new Size(50, 45);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
@@ -133,10 +133,10 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(-1, -7);
+            panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1579, 908);
+            panel1.Size = new Size(1920, 1080);
             panel1.TabIndex = 2;
             // 
             // panel2
@@ -151,12 +151,13 @@
             panel2.Location = new Point(488, -8);
             panel2.Margin = new Padding(4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1090, 908);
+            panel2.Size = new Size(1432, 1088);
             panel2.TabIndex = 3;
             panel2.Paint += panel2_Paint;
             // 
             // iconButton1
             // 
+            iconButton1.Anchor = AnchorStyles.Right;
             iconButton1.BackColor = Color.Transparent;
             iconButton1.FlatAppearance.BorderSize = 0;
             iconButton1.FlatStyle = FlatStyle.Flat;
@@ -164,7 +165,7 @@
             iconButton1.IconColor = Color.Red;
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             iconButton1.IconSize = 60;
-            iconButton1.Location = new Point(1050, 18);
+            iconButton1.Location = new Point(1389, 11);
             iconButton1.Name = "iconButton1";
             iconButton1.Size = new Size(43, 41);
             iconButton1.TabIndex = 10;
@@ -181,7 +182,7 @@
             btnLogin.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.White;
             btnLogin.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnLogin.Location = new Point(445, 674);
+            btnLogin.Location = new Point(483, 678);
             btnLogin.Margin = new Padding(4);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(188, 56);
@@ -197,7 +198,7 @@
             btnLupaPass.FlatStyle = FlatStyle.Flat;
             btnLupaPass.Font = new Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLupaPass.ForeColor = Color.White;
-            btnLupaPass.Location = new Point(668, 620);
+            btnLupaPass.Location = new Point(699, 633);
             btnLupaPass.Margin = new Padding(4);
             btnLupaPass.Name = "btnLupaPass";
             btnLupaPass.Size = new Size(186, 36);
@@ -219,24 +220,24 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 20F, FontStyle.Bold);
+            label2.Font = new Font("Century Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(94, 438);
+            label2.Location = new Point(79, 438);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(315, 47);
+            label2.Size = new Size(378, 56);
             label2.TabIndex = 2;
             label2.Text = "di MED-CHECK!";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 20F, FontStyle.Bold);
+            label1.Font = new Font("Century Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(80, 388);
+            label1.Location = new Point(56, 382);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(332, 47);
+            label1.Size = new Size(401, 56);
             label1.TabIndex = 1;
             label1.Text = "Selamat Datang";
             // 
@@ -244,7 +245,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1578, 841);
+            ClientSize = new Size(1920, 1080);
             Controls.Add(panel1);
             ForeColor = SystemColors.ControlText;
             FormBorderStyle = FormBorderStyle.None;
