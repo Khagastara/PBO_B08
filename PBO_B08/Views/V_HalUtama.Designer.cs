@@ -29,16 +29,20 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            panelOverlay = new Panel();
+            panelPopup = new Panel();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             btnHomepage = new customeToolBox.RoundedButton();
             panel2 = new Panel();
+            roundedButton2 = new customeToolBox.RoundedButton();
+            roundedButton1 = new customeToolBox.RoundedButton();
             roundedButton4 = new customeToolBox.RoundedButton();
             btnPemeriksaan = new customeToolBox.RoundedButton();
             btnPasien = new customeToolBox.RoundedButton();
             label2 = new Label();
-            roundedButton1 = new customeToolBox.RoundedButton();
-            roundedButton2 = new customeToolBox.RoundedButton();
+            panel1.SuspendLayout();
+            panelOverlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -46,12 +50,32 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(224, 224, 224);
+            panel1.Controls.Add(panelOverlay);
             panel1.Dock = DockStyle.Right;
             panel1.Location = new Point(238, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1024, 673);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
+            // 
+            // panelOverlay
+            // 
+            panelOverlay.BackColor = Color.Black;
+            panelOverlay.Controls.Add(panelPopup);
+            panelOverlay.Location = new Point(166, 111);
+            panelOverlay.Name = "panelOverlay";
+            panelOverlay.Size = new Size(691, 400);
+            panelOverlay.TabIndex = 1;
+            panelOverlay.Visible = false;
+            // 
+            // panelPopup
+            // 
+            panelPopup.BackColor = Color.White;
+            panelPopup.BorderStyle = BorderStyle.FixedSingle;
+            panelPopup.Location = new Point(233, 174);
+            panelPopup.Name = "panelPopup";
+            panelPopup.Size = new Size(500, 300);
+            panelPopup.TabIndex = 0;
             // 
             // label1
             // 
@@ -112,6 +136,43 @@
             panel2.Size = new Size(240, 720);
             panel2.TabIndex = 2;
             // 
+            // roundedButton2
+            // 
+            roundedButton2.BackColor = Color.FromArgb(4, 118, 208);
+            roundedButton2.BorderColor = Color.Transparent;
+            roundedButton2.BorderRadius = 20;
+            roundedButton2.BorderWidth = 2;
+            roundedButton2.FlatStyle = FlatStyle.Flat;
+            roundedButton2.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            roundedButton2.ForeColor = Color.White;
+            roundedButton2.Image = Properties.Resources.Logout_icon;
+            roundedButton2.ImageAlignment = ContentAlignment.MiddleLeft;
+            roundedButton2.Location = new Point(12, 433);
+            roundedButton2.Name = "roundedButton2";
+            roundedButton2.Size = new Size(220, 50);
+            roundedButton2.TabIndex = 9;
+            roundedButton2.Text = "Logout";
+            roundedButton2.UseVisualStyleBackColor = false;
+            roundedButton2.Click += btnLogout_Click;
+            // 
+            // roundedButton1
+            // 
+            roundedButton1.BackColor = Color.FromArgb(4, 118, 208);
+            roundedButton1.BorderColor = Color.Transparent;
+            roundedButton1.BorderRadius = 20;
+            roundedButton1.BorderWidth = 2;
+            roundedButton1.FlatStyle = FlatStyle.Flat;
+            roundedButton1.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            roundedButton1.ForeColor = Color.White;
+            roundedButton1.Image = Properties.Resources.Profile_icon3;
+            roundedButton1.ImageAlignment = ContentAlignment.MiddleLeft;
+            roundedButton1.Location = new Point(12, 202);
+            roundedButton1.Name = "roundedButton1";
+            roundedButton1.Size = new Size(220, 50);
+            roundedButton1.TabIndex = 8;
+            roundedButton1.Text = "Profil";
+            roundedButton1.UseVisualStyleBackColor = false;
+            // 
             // roundedButton4
             // 
             roundedButton4.BackColor = Color.FromArgb(4, 118, 208);
@@ -149,6 +210,7 @@
             btnPemeriksaan.TabIndex = 6;
             btnPemeriksaan.Text = "   Rekam Medis";
             btnPemeriksaan.UseVisualStyleBackColor = false;
+            btnPemeriksaan.Click += btnRekam_Click;
             // 
             // btnPasien
             // 
@@ -178,42 +240,6 @@
             label2.TabIndex = 2;
             label2.Text = "Tool";
             // 
-            // roundedButton1
-            // 
-            roundedButton1.BackColor = Color.FromArgb(4, 118, 208);
-            roundedButton1.BorderColor = Color.Transparent;
-            roundedButton1.BorderRadius = 20;
-            roundedButton1.BorderWidth = 2;
-            roundedButton1.FlatStyle = FlatStyle.Flat;
-            roundedButton1.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            roundedButton1.ForeColor = Color.White;
-            roundedButton1.Image = Properties.Resources.Profile_icon3;
-            roundedButton1.ImageAlignment = ContentAlignment.MiddleLeft;
-            roundedButton1.Location = new Point(12, 202);
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(220, 50);
-            roundedButton1.TabIndex = 8;
-            roundedButton1.Text = "Profil";
-            roundedButton1.UseVisualStyleBackColor = false;
-            // 
-            // roundedButton2
-            // 
-            roundedButton2.BackColor = Color.FromArgb(4, 118, 208);
-            roundedButton2.BorderColor = Color.Transparent;
-            roundedButton2.BorderRadius = 20;
-            roundedButton2.BorderWidth = 2;
-            roundedButton2.FlatStyle = FlatStyle.Flat;
-            roundedButton2.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            roundedButton2.ForeColor = Color.White;
-            roundedButton2.Image = Properties.Resources.Logout_icon;
-            roundedButton2.ImageAlignment = ContentAlignment.MiddleLeft;
-            roundedButton2.Location = new Point(12, 433);
-            roundedButton2.Name = "roundedButton2";
-            roundedButton2.Size = new Size(220, 50);
-            roundedButton2.TabIndex = 9;
-            roundedButton2.Text = "Logout";
-            roundedButton2.UseVisualStyleBackColor = false;
-            // 
             // V_HalUtama
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -224,6 +250,8 @@
             Controls.Add(panel1);
             Name = "V_HalUtama";
             Text = "V_HalUtama";
+            panel1.ResumeLayout(false);
+            panelOverlay.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -239,8 +267,10 @@
         private Label label2;
         private customeToolBox.RoundedButton roundedButton4;
         private customeToolBox.RoundedButton btnPemeriksaan;
-        public static Panel panel1;
         private customeToolBox.RoundedButton roundedButton1;
         private customeToolBox.RoundedButton roundedButton2;
+        private Panel panelOverlay;
+        private Panel panelPopup;
+        public static Panel panel1;
     }
 }
