@@ -47,10 +47,20 @@ namespace PBO_B08.Views
 
         private void btnIya_Click(object sender, EventArgs e)
         {
-            OnLogoutConfirmed?.Invoke(); 
+           
         }
 
         private void btnTidak_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            OnLogoutConfirmed?.Invoke();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
         {
             ((Panel)this.Parent).Parent.Controls["panelOverlay"].Visible = false;
         }

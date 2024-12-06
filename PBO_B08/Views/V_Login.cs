@@ -19,6 +19,8 @@ namespace PBO_B08
         public V_Login()
         {
             InitializeComponent();
+            // Atur tombol Login sebagai AcceptButton
+            this.AcceptButton = btnLogin;
 
         }
 
@@ -64,6 +66,31 @@ namespace PBO_B08
             {
                 MessageBox.Show("Username atau Password salah. Masukkan dengan benar!", "LOGIN FAILED", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            // Tampilkan dialog konfirmasi sebelum keluar
+            DialogResult result = MessageBox.Show("Apakah Anda yakin ingin keluar dari aplikasi?",
+                                                  "Konfirmasi Keluar",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+
+            // Jika pengguna memilih "Yes", keluar dari aplikasi
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnLupaPass_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

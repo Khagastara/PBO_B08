@@ -28,65 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            btnIya = new Button();
-            btnTidak = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(V_Logout));
+            iconButton1 = new FontAwesome.Sharp.IconButton();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
             SuspendLayout();
             // 
-            // label1
+            // iconButton1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Narrow", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(126, 67);
-            label1.Name = "label1";
-            label1.Size = new Size(445, 40);
-            label1.TabIndex = 0;
-            label1.Text = "Apakah Anda yakin Ingin Logout?";
-            label1.Click += label1_Click;
+            iconButton1.FlatAppearance.BorderSize = 0;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            iconButton1.ForeColor = Color.White;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton1.IconColor = Color.Transparent;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Location = new Point(521, 305);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(119, 40);
+            iconButton1.TabIndex = 3;
+            iconButton1.Text = "IYA";
+            iconButton1.UseVisualStyleBackColor = true;
+            iconButton1.Click += iconButton1_Click;
             // 
-            // btnIya
+            // iconButton2
             // 
-            btnIya.BackColor = Color.Blue;
-            btnIya.Location = new Point(50, 255);
-            btnIya.Name = "btnIya";
-            btnIya.Size = new Size(140, 59);
-            btnIya.TabIndex = 1;
-            btnIya.Text = "Iya";
-            btnIya.UseVisualStyleBackColor = false;
-            btnIya.Click += btnIya_Click;
-            // 
-            // btnTidak
-            // 
-            btnTidak.BackColor = Color.Red;
-            btnTidak.Location = new Point(502, 255);
-            btnTidak.Name = "btnTidak";
-            btnTidak.Size = new Size(140, 59);
-            btnTidak.TabIndex = 2;
-            btnTidak.Text = "Tidak";
-            btnTidak.UseVisualStyleBackColor = false;
-            btnTidak.Click += btnTidak_Click;
+            iconButton2.FlatAppearance.BorderSize = 0;
+            iconButton2.FlatStyle = FlatStyle.Flat;
+            iconButton2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            iconButton2.ForeColor = Color.White;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton2.IconColor = Color.Black;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton2.Location = new Point(680, 305);
+            iconButton2.Name = "iconButton2";
+            iconButton2.Size = new Size(112, 34);
+            iconButton2.TabIndex = 4;
+            iconButton2.Text = "TIDAK";
+            iconButton2.UseVisualStyleBackColor = true;
+            iconButton2.Click += iconButton2_Click;
             // 
             // V_Logout
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(4, 118, 208);
-            Controls.Add(btnTidak);
-            Controls.Add(btnIya);
-            Controls.Add(label1);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Controls.Add(iconButton2);
+            Controls.Add(iconButton1);
             Location = new Point(250, 200);
+            Margin = new Padding(4);
             Name = "V_Logout";
-            Size = new Size(704, 492);
+            Size = new Size(880, 615);
             Load += UserControl1_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
-        private Button btnIya;
-        private Button btnTidak;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }
