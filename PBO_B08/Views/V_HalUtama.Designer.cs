@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            panelOverlay = new Panel();
+            panelPopup = new Panel();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             btnHomepage = new customeToolBox.RoundedButton();
@@ -39,6 +41,8 @@
             btnPemeriksaan = new customeToolBox.RoundedButton();
             btnPasien = new customeToolBox.RoundedButton();
             label2 = new Label();
+            panel1.SuspendLayout();
+            panelOverlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -46,33 +50,50 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(224, 224, 224);
+            panel1.Controls.Add(panelOverlay);
             panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(298, 0);
-            panel1.Margin = new Padding(4, 4, 4, 4);
+            panel1.Location = new Point(238, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1280, 841);
+            panel1.Size = new Size(1024, 673);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
+            // 
+            // panelOverlay
+            // 
+            panelOverlay.BackColor = Color.Black;
+            panelOverlay.Controls.Add(panelPopup);
+            panelOverlay.Location = new Point(166, 111);
+            panelOverlay.Name = "panelOverlay";
+            panelOverlay.Size = new Size(691, 400);
+            panelOverlay.TabIndex = 1;
+            panelOverlay.Visible = false;
+            // 
+            // panelPopup
+            // 
+            panelPopup.BackColor = Color.White;
+            panelPopup.BorderStyle = BorderStyle.FixedSingle;
+            panelPopup.Location = new Point(233, 174);
+            panelPopup.Name = "panelPopup";
+            panelPopup.Size = new Size(500, 300);
+            panelPopup.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(116, 39);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(93, 31);
             label1.Name = "label1";
-            label1.Size = new Size(154, 28);
+            label1.Size = new Size(128, 23);
             label1.TabIndex = 0;
             label1.Text = "MED-CHECK";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.pngtree_vector_doctor_icon_png_image_4280176_removebg_preview;
-            pictureBox1.Location = new Point(29, 21);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Location = new Point(23, 17);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(62, 62);
+            pictureBox1.Size = new Size(50, 50);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -90,10 +111,9 @@
             btnHomepage.Image = Properties.Resources.pngegg3;
             btnHomepage.ImageAlign = ContentAlignment.MiddleLeft;
             btnHomepage.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnHomepage.Location = new Point(15, 179);
-            btnHomepage.Margin = new Padding(4, 4, 4, 4);
+            btnHomepage.Location = new Point(12, 143);
             btnHomepage.Name = "btnHomepage";
-            btnHomepage.Size = new Size(275, 62);
+            btnHomepage.Size = new Size(220, 50);
             btnHomepage.TabIndex = 1;
             btnHomepage.Text = "Homepage";
             btnHomepage.UseVisualStyleBackColor = false;
@@ -112,9 +132,8 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(btnHomepage);
             panel2.Location = new Point(0, 0);
-            panel2.Margin = new Padding(4, 4, 4, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(300, 900);
+            panel2.Size = new Size(240, 720);
             panel2.TabIndex = 2;
             // 
             // roundedButton2
@@ -128,13 +147,13 @@
             roundedButton2.ForeColor = Color.White;
             roundedButton2.Image = Properties.Resources.Logout_icon;
             roundedButton2.ImageAlignment = ContentAlignment.MiddleLeft;
-            roundedButton2.Location = new Point(15, 541);
-            roundedButton2.Margin = new Padding(4, 4, 4, 4);
+            roundedButton2.Location = new Point(12, 433);
             roundedButton2.Name = "roundedButton2";
-            roundedButton2.Size = new Size(275, 62);
+            roundedButton2.Size = new Size(220, 50);
             roundedButton2.TabIndex = 9;
             roundedButton2.Text = "Logout";
             roundedButton2.UseVisualStyleBackColor = false;
+            roundedButton2.Click += btnLogout_Click;
             // 
             // roundedButton1
             // 
@@ -147,10 +166,9 @@
             roundedButton1.ForeColor = Color.White;
             roundedButton1.Image = Properties.Resources.Profile_icon3;
             roundedButton1.ImageAlignment = ContentAlignment.MiddleLeft;
-            roundedButton1.Location = new Point(15, 252);
-            roundedButton1.Margin = new Padding(4, 4, 4, 4);
+            roundedButton1.Location = new Point(12, 202);
             roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(275, 62);
+            roundedButton1.Size = new Size(220, 50);
             roundedButton1.TabIndex = 8;
             roundedButton1.Text = "Profil";
             roundedButton1.UseVisualStyleBackColor = false;
@@ -167,10 +185,9 @@
             roundedButton4.Image = Properties.Resources.Medicine_Icon1;
             roundedButton4.ImageAlign = ContentAlignment.MiddleLeft;
             roundedButton4.ImageAlignment = ContentAlignment.MiddleLeft;
-            roundedButton4.Location = new Point(15, 396);
-            roundedButton4.Margin = new Padding(4, 4, 4, 4);
+            roundedButton4.Location = new Point(12, 317);
             roundedButton4.Name = "roundedButton4";
-            roundedButton4.Size = new Size(275, 62);
+            roundedButton4.Size = new Size(220, 50);
             roundedButton4.TabIndex = 7;
             roundedButton4.Text = "Obat";
             roundedButton4.TextAlign = ContentAlignment.MiddleLeft;
@@ -187,10 +204,9 @@
             btnPemeriksaan.ForeColor = Color.White;
             btnPemeriksaan.Image = Properties.Resources._97q2oiq7i495p7gcc0h7q7js1n;
             btnPemeriksaan.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnPemeriksaan.Location = new Point(15, 470);
-            btnPemeriksaan.Margin = new Padding(4, 4, 4, 4);
+            btnPemeriksaan.Location = new Point(12, 376);
             btnPemeriksaan.Name = "btnPemeriksaan";
-            btnPemeriksaan.Size = new Size(275, 62);
+            btnPemeriksaan.Size = new Size(220, 50);
             btnPemeriksaan.TabIndex = 6;
             btnPemeriksaan.Text = "   Rekam Medis";
             btnPemeriksaan.UseVisualStyleBackColor = false;
@@ -207,10 +223,9 @@
             btnPasien.ForeColor = Color.White;
             btnPasien.Image = Properties.Resources.imgbin_patient_icon_blood_donation_icon_png2;
             btnPasien.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnPasien.Location = new Point(15, 326);
-            btnPasien.Margin = new Padding(4, 4, 4, 4);
+            btnPasien.Location = new Point(12, 261);
             btnPasien.Name = "btnPasien";
-            btnPasien.Size = new Size(275, 62);
+            btnPasien.Size = new Size(220, 50);
             btnPasien.TabIndex = 5;
             btnPasien.Text = " Data Pasien";
             btnPasien.UseVisualStyleBackColor = false;
@@ -219,24 +234,24 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(15, 139);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(12, 111);
             label2.Name = "label2";
-            label2.Size = new Size(45, 25);
+            label2.Size = new Size(38, 20);
             label2.TabIndex = 2;
             label2.Text = "Tool";
             // 
             // V_HalUtama
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Menu;
-            ClientSize = new Size(1578, 841);
+            ClientSize = new Size(1262, 673);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Margin = new Padding(4, 4, 4, 4);
             Name = "V_HalUtama";
             Text = "V_HalUtama";
+            panel1.ResumeLayout(false);
+            panelOverlay.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -254,6 +269,8 @@
         private customeToolBox.RoundedButton btnPemeriksaan;
         private customeToolBox.RoundedButton roundedButton1;
         private customeToolBox.RoundedButton roundedButton2;
+        private Panel panelOverlay;
+        private Panel panelPopup;
         public static Panel panel1;
     }
 }
