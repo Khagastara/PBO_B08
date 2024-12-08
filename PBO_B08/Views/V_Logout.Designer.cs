@@ -2,12 +2,12 @@
 {
     partial class V_Logout
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,65 +20,78 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             label1 = new Label();
-            btnIya = new Button();
-            btnTidak = new Button();
+            btnYa = new customeToolBox.RoundedButton();
+            btnTidak = new customeToolBox.RoundedButton();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial Narrow", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(126, 67);
+            label1.Location = new Point(92, 75);
             label1.Name = "label1";
-            label1.Size = new Size(445, 40);
+            label1.Size = new Size(424, 37);
             label1.TabIndex = 0;
-            label1.Text = "Apakah Anda yakin Ingin Logout?";
-            label1.Click += label1_Click;
+            label1.Text = "Apakah Anda Ingin Logout?";
             // 
-            // btnIya
+            // btnYa
             // 
-            btnIya.BackColor = Color.Blue;
-            btnIya.Location = new Point(50, 255);
-            btnIya.Name = "btnIya";
-            btnIya.Size = new Size(140, 59);
-            btnIya.TabIndex = 1;
-            btnIya.Text = "Iya";
-            btnIya.UseVisualStyleBackColor = false;
-            btnIya.Click += btnIya_Click;
+            btnYa.BackColor = Color.White;
+            btnYa.BackgroundImageLayout = ImageLayout.None;
+            btnYa.BorderColor = Color.Transparent;
+            btnYa.BorderRadius = 20;
+            btnYa.BorderWidth = 2;
+            btnYa.Font = new Font("Century Gothic", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnYa.ForeColor = Color.FromArgb(4, 118, 208);
+            btnYa.ImageAlignment = ContentAlignment.MiddleLeft;
+            btnYa.Location = new Point(108, 172);
+            btnYa.Name = "btnYa";
+            btnYa.Size = new Size(120, 45);
+            btnYa.TabIndex = 1;
+            btnYa.Text = "Ya";
+            btnYa.UseVisualStyleBackColor = false;
+            btnYa.Click += btnYa_Click;
             // 
             // btnTidak
             // 
-            btnTidak.BackColor = Color.Red;
-            btnTidak.Location = new Point(502, 255);
+            btnTidak.BackColor = Color.White;
+            btnTidak.BackgroundImageLayout = ImageLayout.None;
+            btnTidak.BorderColor = Color.Transparent;
+            btnTidak.BorderRadius = 20;
+            btnTidak.BorderWidth = 2;
+            btnTidak.Font = new Font("Century Gothic", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTidak.ForeColor = Color.FromArgb(4, 118, 208);
+            btnTidak.ImageAlignment = ContentAlignment.MiddleLeft;
+            btnTidak.Location = new Point(368, 172);
             btnTidak.Name = "btnTidak";
-            btnTidak.Size = new Size(140, 59);
+            btnTidak.Size = new Size(120, 45);
             btnTidak.TabIndex = 2;
             btnTidak.Text = "Tidak";
             btnTidak.UseVisualStyleBackColor = false;
             btnTidak.Click += btnTidak_Click;
             // 
-            // V_Logout
+            // V_Logout1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(4, 118, 208);
+            ClientSize = new Size(600, 300);
             Controls.Add(btnTidak);
-            Controls.Add(btnIya);
+            Controls.Add(btnYa);
             Controls.Add(label1);
-            Location = new Point(250, 200);
-            Name = "V_Logout";
-            Size = new Size(704, 492);
-            Load += UserControl1_Load;
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "V_Logout1";
+            Text = "V_Logout1";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -86,7 +99,7 @@
         #endregion
 
         private Label label1;
-        private Button btnIya;
-        private Button btnTidak;
+        private customeToolBox.RoundedButton btnYa;
+        private customeToolBox.RoundedButton btnTidak;
     }
 }

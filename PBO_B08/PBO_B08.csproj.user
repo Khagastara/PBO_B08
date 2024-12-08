@@ -7,10 +7,10 @@
     <Compile Update="customeToolBox\customePanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Views\V_Logout.cs">
+    <Compile Update="Views\V_AddPasien.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Views\V_AddPasien.cs">
+    <Compile Update="Views\V_AddRekam.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Views\V_HalPasien.cs">
@@ -25,8 +25,11 @@
     <Compile Update="Views\V_HalUtama.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\V_MembuatDataPasien.cs">
+    <Compile Update="Views\V_Logout.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\V_PilihPasien.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>

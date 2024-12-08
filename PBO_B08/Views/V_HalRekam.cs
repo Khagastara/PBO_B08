@@ -64,7 +64,7 @@ namespace PBO_B08.Views
                 if (dgvRekamMedis.Columns["tanggalPemeriksaan"] != null) dgvRekamMedis.Columns["tanggalPemeriksaan"].HeaderText = "Tanggal Pemeriksaan";
                 if (dgvRekamMedis.Columns["hasilPemeriksaan"] != null) dgvRekamMedis.Columns["hasilPemeriksaan"].HeaderText = "Hasil Pemeriksaan";
                 if (dgvRekamMedis.Columns["Diagnosis"] != null) dgvRekamMedis.Columns["Diagnosis"].HeaderText = "Diagnosis";
-                if (dgvRekamMedis.Columns["namaObat"] != null) dgvRekamMedis.Columns["namaObat"].HeaderText = "Obat";
+                if (dgvRekamMedis.Columns["namaObat"] != null) dgvRekamMedis.Columns["namaObat"].HeaderText = "namaObat";
 
                 // Tambahkan kolom nomor urut
                 DataGridViewTextBoxColumn nomorColumn = new DataGridViewTextBoxColumn
@@ -84,6 +84,15 @@ namespace PBO_B08.Views
             {
                 MessageBox.Show($"Error dalam LoadDataRekam: {ex.Message}\n{ex.StackTrace}");
             }
+        }
+
+        private void btnAddPasien_Click(object sender, EventArgs e)
+        {
+            V_PilihPasien v_pilihPasien = new V_PilihPasien();
+
+            V_HalUtama.panel1.Controls.Clear();
+            V_HalUtama.panel1.Controls.Add(v_pilihPasien);
+            v_pilihPasien.Dock = DockStyle.Fill;
         }
     }
 }
