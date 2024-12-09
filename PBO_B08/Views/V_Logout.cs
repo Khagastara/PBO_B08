@@ -27,8 +27,13 @@ namespace PBO_B08.Views
             V_Login v_login = new V_Login();
             this.Hide();
             v_login.Show();
-            V_HalUtama v_HalUtama = new V_HalUtama();
-            v_HalUtama.Hide();
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is not V_Login)
+                {
+                    form.Hide();
+                }
+            }
         }
     }
 }
