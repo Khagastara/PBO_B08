@@ -56,5 +56,17 @@ namespace PBO_B08.Views
             logout.Show();
 
         }
+
+        private void btnProfil_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new V_HalProfil());
+        }
+
+        private void LoadUserControl(UserControl userControl)
+        {
+            panelContent.Controls.Clear(); 
+            userControl.Dock = DockStyle.Fill; 
+            panelContent.Controls.Add(userControl); 
+        }
     }
 }

@@ -94,7 +94,6 @@ C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Vie
 C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalRekam.resources
 C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalUtama.resources
 C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.V_Login.resources
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_MembuatDataPasien.resources
 C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.GenerateResource.cache
 C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfoInputs.cache
@@ -169,3 +168,7 @@ C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.gen
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_PilihPasien.resources
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddRekam.resources
+C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
+C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddRekam.resources
+C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalProfil.resources
+C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_PilihPasien.resources

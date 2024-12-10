@@ -16,6 +16,9 @@
     <Compile Update="Views\V_HalPasien.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Views\V_HalProfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Views\V_HalRekam.cs">
       <SubType>UserControl</SubType>
     </Compile>
