@@ -56,5 +56,15 @@ namespace PBO_B08.Views
             logout.Show();
 
         }
+
+
+        private void btnObat_Click(object sender, EventArgs e)
+        {
+            V_HalObat v_HalObat = new V_HalObat();
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(v_HalObat);
+            v_HalObat.Dock = DockStyle.Fill;
+        }
     }
 }

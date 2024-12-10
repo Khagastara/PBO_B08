@@ -53,7 +53,7 @@
             panel1.Controls.Add(panelOverlay);
             panel1.Dock = DockStyle.Right;
             panel1.Location = new Point(298, 0);
-            panel1.Margin = new Padding(4, 4, 4, 4);
+            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
             panel1.Size = new Size(1280, 841);
             panel1.TabIndex = 0;
@@ -64,7 +64,7 @@
             panelOverlay.BackColor = Color.Black;
             panelOverlay.Controls.Add(panelPopup);
             panelOverlay.Location = new Point(208, 139);
-            panelOverlay.Margin = new Padding(4, 4, 4, 4);
+            panelOverlay.Margin = new Padding(4);
             panelOverlay.Name = "panelOverlay";
             panelOverlay.Size = new Size(864, 500);
             panelOverlay.TabIndex = 1;
@@ -75,7 +75,7 @@
             panelPopup.BackColor = Color.White;
             panelPopup.BorderStyle = BorderStyle.FixedSingle;
             panelPopup.Location = new Point(170, 113);
-            panelPopup.Margin = new Padding(4, 4, 4, 4);
+            panelPopup.Margin = new Padding(4);
             panelPopup.Name = "panelPopup";
             panelPopup.Size = new Size(624, 374);
             panelPopup.TabIndex = 0;
@@ -96,7 +96,7 @@
             // 
             pictureBox1.Image = Properties.Resources.pngtree_vector_doctor_icon_png_image_4280176_removebg_preview;
             pictureBox1.Location = new Point(29, 21);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(62, 62);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -117,7 +117,7 @@
             btnHomepage.ImageAlign = ContentAlignment.MiddleLeft;
             btnHomepage.ImageAlignment = ContentAlignment.MiddleLeft;
             btnHomepage.Location = new Point(15, 179);
-            btnHomepage.Margin = new Padding(4, 4, 4, 4);
+            btnHomepage.Margin = new Padding(4);
             btnHomepage.Name = "btnHomepage";
             btnHomepage.Size = new Size(275, 62);
             btnHomepage.TabIndex = 1;
@@ -138,7 +138,7 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(btnHomepage);
             panel2.Location = new Point(0, 0);
-            panel2.Margin = new Padding(4, 4, 4, 4);
+            panel2.Margin = new Padding(4);
             panel2.Name = "panel2";
             panel2.Size = new Size(300, 900);
             panel2.TabIndex = 2;
@@ -155,7 +155,7 @@
             roundedButton2.Image = Properties.Resources.Logout_icon;
             roundedButton2.ImageAlignment = ContentAlignment.MiddleLeft;
             roundedButton2.Location = new Point(15, 541);
-            roundedButton2.Margin = new Padding(4, 4, 4, 4);
+            roundedButton2.Margin = new Padding(4);
             roundedButton2.Name = "roundedButton2";
             roundedButton2.Size = new Size(275, 62);
             roundedButton2.TabIndex = 9;
@@ -175,7 +175,7 @@
             roundedButton1.Image = Properties.Resources.Profile_icon3;
             roundedButton1.ImageAlignment = ContentAlignment.MiddleLeft;
             roundedButton1.Location = new Point(15, 252);
-            roundedButton1.Margin = new Padding(4, 4, 4, 4);
+            roundedButton1.Margin = new Padding(4);
             roundedButton1.Name = "roundedButton1";
             roundedButton1.Size = new Size(275, 62);
             roundedButton1.TabIndex = 8;
@@ -195,13 +195,14 @@
             roundedButton4.ImageAlign = ContentAlignment.MiddleLeft;
             roundedButton4.ImageAlignment = ContentAlignment.MiddleLeft;
             roundedButton4.Location = new Point(15, 396);
-            roundedButton4.Margin = new Padding(4, 4, 4, 4);
+            roundedButton4.Margin = new Padding(4);
             roundedButton4.Name = "roundedButton4";
             roundedButton4.Size = new Size(275, 62);
             roundedButton4.TabIndex = 7;
             roundedButton4.Text = "Obat";
             roundedButton4.TextAlign = ContentAlignment.MiddleLeft;
             roundedButton4.UseVisualStyleBackColor = false;
+            roundedButton4.Click += btnObat_Click;
             // 
             // btnPemeriksaan
             // 
@@ -215,7 +216,7 @@
             btnPemeriksaan.Image = Properties.Resources._97q2oiq7i495p7gcc0h7q7js1n;
             btnPemeriksaan.ImageAlignment = ContentAlignment.MiddleLeft;
             btnPemeriksaan.Location = new Point(15, 470);
-            btnPemeriksaan.Margin = new Padding(4, 4, 4, 4);
+            btnPemeriksaan.Margin = new Padding(4);
             btnPemeriksaan.Name = "btnPemeriksaan";
             btnPemeriksaan.Size = new Size(275, 62);
             btnPemeriksaan.TabIndex = 6;
@@ -235,7 +236,7 @@
             btnPasien.Image = Properties.Resources.imgbin_patient_icon_blood_donation_icon_png2;
             btnPasien.ImageAlignment = ContentAlignment.MiddleLeft;
             btnPasien.Location = new Point(15, 326);
-            btnPasien.Margin = new Padding(4, 4, 4, 4);
+            btnPasien.Margin = new Padding(4);
             btnPasien.Name = "btnPasien";
             btnPasien.Size = new Size(275, 62);
             btnPasien.TabIndex = 5;
@@ -261,7 +262,7 @@
             ClientSize = new Size(1578, 841);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "V_HalUtama";
             Text = "V_HalUtama";
             panel1.ResumeLayout(false);
@@ -283,8 +284,8 @@
         private customeToolBox.RoundedButton btnPemeriksaan;
         private customeToolBox.RoundedButton roundedButton1;
         private customeToolBox.RoundedButton roundedButton2;
-        private static Panel panelOverlay;
-        private static Panel panelPopup;
+        private Panel panelOverlay;
+        private Panel panelPopup;
         public static Panel panel1;
     }
 }
