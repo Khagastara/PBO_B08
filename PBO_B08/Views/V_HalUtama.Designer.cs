@@ -54,7 +54,12 @@
             panel1.Controls.Add(panelOverlay);
             panel1.Controls.Add(panelContent);
             panel1.Dock = DockStyle.Right;
+<<<<<<< HEAD
             panel1.Location = new Point(238, 0);
+=======
+            panel1.Location = new Point(298, 0);
+            panel1.Margin = new Padding(4);
+>>>>>>> main
             panel1.Name = "panel1";
             panel1.Size = new Size(1024, 673);
             panel1.TabIndex = 0;
@@ -64,7 +69,12 @@
             // 
             panelOverlay.BackColor = Color.Black;
             panelOverlay.Controls.Add(panelPopup);
+<<<<<<< HEAD
             panelOverlay.Location = new Point(166, 111);
+=======
+            panelOverlay.Location = new Point(208, 139);
+            panelOverlay.Margin = new Padding(4);
+>>>>>>> main
             panelOverlay.Name = "panelOverlay";
             panelOverlay.Size = new Size(691, 400);
             panelOverlay.TabIndex = 1;
@@ -74,7 +84,12 @@
             // 
             panelPopup.BackColor = Color.White;
             panelPopup.BorderStyle = BorderStyle.FixedSingle;
+<<<<<<< HEAD
             panelPopup.Location = new Point(136, 90);
+=======
+            panelPopup.Location = new Point(170, 113);
+            panelPopup.Margin = new Padding(4);
+>>>>>>> main
             panelPopup.Name = "panelPopup";
             panelPopup.Size = new Size(500, 300);
             panelPopup.TabIndex = 0;
@@ -93,7 +108,12 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.pngtree_vector_doctor_icon_png_image_4280176_removebg_preview;
+<<<<<<< HEAD
             pictureBox1.Location = new Point(23, 17);
+=======
+            pictureBox1.Location = new Point(29, 21);
+            pictureBox1.Margin = new Padding(4);
+>>>>>>> main
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(50, 50);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -113,7 +133,12 @@
             btnHomepage.Image = Properties.Resources.pngegg3;
             btnHomepage.ImageAlign = ContentAlignment.MiddleLeft;
             btnHomepage.ImageAlignment = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             btnHomepage.Location = new Point(12, 143);
+=======
+            btnHomepage.Location = new Point(15, 179);
+            btnHomepage.Margin = new Padding(4);
+>>>>>>> main
             btnHomepage.Name = "btnHomepage";
             btnHomepage.Size = new Size(220, 50);
             btnHomepage.TabIndex = 1;
@@ -134,6 +159,10 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(btnHomepage);
             panel2.Location = new Point(0, 0);
+<<<<<<< HEAD
+=======
+            panel2.Margin = new Padding(4);
+>>>>>>> main
             panel2.Name = "panel2";
             panel2.Size = new Size(240, 720);
             panel2.TabIndex = 2;
@@ -149,7 +178,12 @@
             roundedButton2.ForeColor = Color.White;
             roundedButton2.Image = Properties.Resources.Logout_icon;
             roundedButton2.ImageAlignment = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             roundedButton2.Location = new Point(12, 433);
+=======
+            roundedButton2.Location = new Point(15, 541);
+            roundedButton2.Margin = new Padding(4);
+>>>>>>> main
             roundedButton2.Name = "roundedButton2";
             roundedButton2.Size = new Size(220, 50);
             roundedButton2.TabIndex = 9;
@@ -159,6 +193,7 @@
             // 
             // btnProfil
             // 
+<<<<<<< HEAD
             btnProfil.BackColor = Color.FromArgb(4, 118, 208);
             btnProfil.BorderColor = Color.Transparent;
             btnProfil.BorderRadius = 20;
@@ -175,6 +210,24 @@
             btnProfil.Text = "Profil";
             btnProfil.UseVisualStyleBackColor = false;
             btnProfil.Click += btnProfil_Click;
+=======
+            roundedButton1.BackColor = Color.FromArgb(4, 118, 208);
+            roundedButton1.BorderColor = Color.Transparent;
+            roundedButton1.BorderRadius = 20;
+            roundedButton1.BorderWidth = 2;
+            roundedButton1.FlatStyle = FlatStyle.Flat;
+            roundedButton1.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            roundedButton1.ForeColor = Color.White;
+            roundedButton1.Image = Properties.Resources.Profile_icon3;
+            roundedButton1.ImageAlignment = ContentAlignment.MiddleLeft;
+            roundedButton1.Location = new Point(15, 252);
+            roundedButton1.Margin = new Padding(4);
+            roundedButton1.Name = "roundedButton1";
+            roundedButton1.Size = new Size(275, 62);
+            roundedButton1.TabIndex = 8;
+            roundedButton1.Text = "Profil";
+            roundedButton1.UseVisualStyleBackColor = false;
+>>>>>>> main
             // 
             // roundedButton4
             // 
@@ -188,13 +241,19 @@
             roundedButton4.Image = Properties.Resources.Medicine_Icon1;
             roundedButton4.ImageAlign = ContentAlignment.MiddleLeft;
             roundedButton4.ImageAlignment = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             roundedButton4.Location = new Point(12, 317);
+=======
+            roundedButton4.Location = new Point(15, 396);
+            roundedButton4.Margin = new Padding(4);
+>>>>>>> main
             roundedButton4.Name = "roundedButton4";
             roundedButton4.Size = new Size(220, 50);
             roundedButton4.TabIndex = 7;
             roundedButton4.Text = "Obat";
             roundedButton4.TextAlign = ContentAlignment.MiddleLeft;
             roundedButton4.UseVisualStyleBackColor = false;
+            roundedButton4.Click += btnObat_Click;
             // 
             // btnPemeriksaan
             // 
@@ -207,7 +266,12 @@
             btnPemeriksaan.ForeColor = Color.White;
             btnPemeriksaan.Image = Properties.Resources._97q2oiq7i495p7gcc0h7q7js1n;
             btnPemeriksaan.ImageAlignment = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             btnPemeriksaan.Location = new Point(12, 376);
+=======
+            btnPemeriksaan.Location = new Point(15, 470);
+            btnPemeriksaan.Margin = new Padding(4);
+>>>>>>> main
             btnPemeriksaan.Name = "btnPemeriksaan";
             btnPemeriksaan.Size = new Size(220, 50);
             btnPemeriksaan.TabIndex = 6;
@@ -226,7 +290,12 @@
             btnPasien.ForeColor = Color.White;
             btnPasien.Image = Properties.Resources.imgbin_patient_icon_blood_donation_icon_png2;
             btnPasien.ImageAlignment = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             btnPasien.Location = new Point(12, 261);
+=======
+            btnPasien.Location = new Point(15, 326);
+            btnPasien.Margin = new Padding(4);
+>>>>>>> main
             btnPasien.Name = "btnPasien";
             btnPasien.Size = new Size(220, 50);
             btnPasien.TabIndex = 5;
@@ -259,6 +328,10 @@
             ClientSize = new Size(1262, 673);
             Controls.Add(panel2);
             Controls.Add(panel1);
+<<<<<<< HEAD
+=======
+            Margin = new Padding(4);
+>>>>>>> main
             Name = "V_HalUtama";
             Text = "V_HalUtama";
             panel1.ResumeLayout(false);
@@ -282,7 +355,10 @@
         private customeToolBox.RoundedButton roundedButton2;
         private Panel panelOverlay;
         private Panel panelPopup;
+<<<<<<< HEAD
         private Panel panelContent;
+=======
+>>>>>>> main
         public static Panel panel1;
     }
 }

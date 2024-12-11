@@ -57,16 +57,14 @@ namespace PBO_B08.Views
 
         }
 
-        private void btnProfil_Click(object sender, EventArgs e)
-        {
-            LoadUserControl(new V_HalProfil());
-        }
 
-        private void LoadUserControl(UserControl userControl)
+        private void btnObat_Click(object sender, EventArgs e)
         {
-            panelContent.Controls.Clear(); 
-            userControl.Dock = DockStyle.Fill; 
-            panelContent.Controls.Add(userControl); 
+            V_HalObat v_HalObat = new V_HalObat();
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(v_HalObat);
+            v_HalObat.Dock = DockStyle.Fill;
         }
     }
 }
