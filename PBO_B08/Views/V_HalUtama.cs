@@ -45,6 +45,8 @@ namespace PBO_B08.Views
 
         private void btnRekam_Click(object sender, EventArgs e)
         {
+            V_HalRekam v_HalRekam = new V_HalRekam();
+
             panel1.Controls.Clear();
             panel1.Controls.Add(v_HalRekam);
             v_HalRekam.Dock = DockStyle.Fill;
