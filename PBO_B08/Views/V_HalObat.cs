@@ -23,6 +23,9 @@ namespace PBO_B08.Views
         {
             try
             {
+                dataGridViewObat.AllowUserToAddRows = false;
+                dataGridViewObat.RowHeadersVisible = false;
+
                 DataTable dataObat = C_Obat.All();
                 dataGridViewObat.DataSource = dataObat;
             }
