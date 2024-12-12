@@ -43,11 +43,10 @@
             dgvRekamMedis.BackgroundColor = Color.White;
             dgvRekamMedis.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvRekamMedis.GridColor = SystemColors.ActiveBorder;
-            dgvRekamMedis.Location = new Point(48, 159);
-            dgvRekamMedis.Margin = new Padding(4);
+            dgvRekamMedis.Location = new Point(38, 127);
             dgvRekamMedis.Name = "dgvRekamMedis";
             dgvRekamMedis.RowHeadersWidth = 51;
-            dgvRekamMedis.Size = new Size(1169, 596);
+            dgvRekamMedis.Size = new Size(935, 477);
             dgvRekamMedis.TabIndex = 0;
             // 
             // roundedPanel1
@@ -58,10 +57,9 @@
             roundedPanel1.BorderRadius = 20;
             roundedPanel1.BorderWidth = 2;
             roundedPanel1.Controls.Add(txtTelusuri);
-            roundedPanel1.Location = new Point(48, 98);
-            roundedPanel1.Margin = new Padding(4);
+            roundedPanel1.Location = new Point(38, 78);
             roundedPanel1.Name = "roundedPanel1";
-            roundedPanel1.Size = new Size(989, 54);
+            roundedPanel1.Size = new Size(791, 43);
             roundedPanel1.TabIndex = 4;
             roundedPanel1.Paint += roundedPanel1_Paint;
             // 
@@ -69,10 +67,9 @@
             // 
             txtTelusuri.BorderStyle = BorderStyle.None;
             txtTelusuri.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTelusuri.Location = new Point(20, 11);
-            txtTelusuri.Margin = new Padding(4);
+            txtTelusuri.Location = new Point(16, 9);
             txtTelusuri.Name = "txtTelusuri";
-            txtTelusuri.Size = new Size(948, 30);
+            txtTelusuri.Size = new Size(758, 25);
             txtTelusuri.TabIndex = 8;
             // 
             // btnTelusuri
@@ -85,10 +82,9 @@
             btnTelusuri.Font = new Font("Century Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnTelusuri.ForeColor = Color.White;
             btnTelusuri.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnTelusuri.Location = new Point(1050, 98);
-            btnTelusuri.Margin = new Padding(4);
+            btnTelusuri.Location = new Point(840, 78);
             btnTelusuri.Name = "btnTelusuri";
-            btnTelusuri.Size = new Size(166, 51);
+            btnTelusuri.Size = new Size(133, 41);
             btnTelusuri.TabIndex = 5;
             btnTelusuri.Text = "Telusuri";
             btnTelusuri.UseVisualStyleBackColor = false;
@@ -105,39 +101,37 @@
             btnAddPasien.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAddPasien.ForeColor = Color.White;
             btnAddPasien.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnAddPasien.Location = new Point(1050, 762);
-            btnAddPasien.Margin = new Padding(4);
+            btnAddPasien.Location = new Point(840, 610);
             btnAddPasien.Name = "btnAddPasien";
-            btnAddPasien.Size = new Size(166, 56);
+            btnAddPasien.Size = new Size(133, 45);
             btnAddPasien.TabIndex = 6;
             btnAddPasien.Text = "Tambah";
             btnAddPasien.UseVisualStyleBackColor = false;
+            btnAddPasien.Click += btnAddPasien_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(4, 118, 208);
-            label1.Location = new Point(48, 31);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(38, 25);
             label1.Name = "label1";
-            label1.Size = new Size(320, 39);
+            label1.Size = new Size(269, 34);
             label1.TabIndex = 7;
             label1.Text = "Data Rekam Medis";
             label1.Click += label1_Click;
             // 
             // V_HalRekam
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(label1);
             Controls.Add(btnAddPasien);
             Controls.Add(btnTelusuri);
             Controls.Add(roundedPanel1);
             Controls.Add(dgvRekamMedis);
-            Margin = new Padding(4);
             Name = "V_HalRekam";
-            Size = new Size(1280, 841);
+            Size = new Size(1024, 673);
             Load += V_HalRekam_Load;
             ((System.ComponentModel.ISupportInitialize)dgvRekamMedis).EndInit();
             roundedPanel1.ResumeLayout(false);

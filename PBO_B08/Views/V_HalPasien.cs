@@ -10,7 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBO_B08.Views;
 
 namespace PBO_B08.Views
 {
@@ -42,6 +41,16 @@ namespace PBO_B08.Views
                 }
 
                 dataGridView1.Columns.Clear();
+
+                DataColumn noColumn = new DataColumn("No", typeof(int));
+                dataPasien.Columns.Add(noColumn);
+
+                for (int i = 0; i < dataPasien.Rows.Count; i++)
+                {
+                    dataPasien.Rows[i]["No"] = i + 1;
+                }
+
+                dataPasien.Columns["No"].SetOrdinal(0);
                 dataGridView1.DataSource = dataPasien;
 
                 if (dataGridView1.Columns["idPasien"] != null) dataGridView1.Columns["idPasien"].Visible = false;
@@ -49,18 +58,6 @@ namespace PBO_B08.Views
                 if (dataGridView1.Columns["jenisKelamin"] != null) dataGridView1.Columns["jenisKelamin"].HeaderText = "Jenis Kelamin";
                 if (dataGridView1.Columns["tanggalLahir"] != null) dataGridView1.Columns["tanggalLahir"].HeaderText = "Tanggal Lahir";
                 if (dataGridView1.Columns["Alamat"] != null) dataGridView1.Columns["Alamat"].HeaderText = "Alamat";
-
-                DataGridViewTextBoxColumn nomorColumn = new DataGridViewTextBoxColumn
-                {
-                    HeaderText = "No",
-                    Name = "Nomor"
-                };
-                dataGridView1.Columns.Insert(0, nomorColumn);
-
-                for (int i = 0; i < dataGridView1.Rows.Count; i++)
-                {
-                    dataGridView1.Rows[i].Cells["Nomor"].Value = (i + 1).ToString();
-                }
 
                 DataGridViewButtonColumn updateButtonColumn = new DataGridViewButtonColumn
                 {
@@ -85,7 +82,6 @@ namespace PBO_B08.Views
             {
                 MessageBox.Show($"Error dalam LoadDataMahasiswa: {ex.Message}\n{ex.StackTrace}");
             }
-
         }
 
         private void btnAddPasien_Click(object sender, EventArgs e)
@@ -106,7 +102,6 @@ namespace PBO_B08.Views
                 try
                 {
                     int idPasien = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["idPasien"].Value);
-
                     DataTable dataPasien = C_Pasien.getPasienById(idPasien);
 
                     if (dataPasien.Rows.Count > 0)
@@ -122,14 +117,12 @@ namespace PBO_B08.Views
                             Alamat = row["Alamat"].ToString()
                         };
 
-                        this.Hide();
+
                         V_AddPasien v_AddPasien = new V_AddPasien();
+                        V_HalUtama.panel1.Controls.Clear();
+                        V_HalUtama.panel1.Controls.Add(v_AddPasien);
+                        v_AddPasien.Dock = DockStyle.Fill;
                         v_AddPasien.PasienForm(pasien);
-                        //if (v_AddPasien.ShowDialog() == DialogResult.OK)
-                        //{
-                        //    LoadDataPasien();
-                        //}
-                        this.Show();
                     }
                 }
                 catch (Exception ex)

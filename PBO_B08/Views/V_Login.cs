@@ -20,6 +20,7 @@ namespace PBO_B08
         {
             InitializeComponent();
 
+            this.AcceptButton = btnLogin;
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -47,6 +48,8 @@ namespace PBO_B08
             {
                 try
                 {
+                    UserSession.LoggedInDoctorId = login.idDokter;
+
                     this.Hide();
                     V_HalUtama halamanUtama = new V_HalUtama();
                     halamanUtama.Show();
@@ -64,6 +67,36 @@ namespace PBO_B08
             {
                 MessageBox.Show("Username atau Password salah. Masukkan dengan benar!", "LOGIN FAILED", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            // Tampilkan dialog konfirmasi sebelum keluar
+            DialogResult result = MessageBox.Show("Apakah Anda yakin ingin keluar dari aplikasi?",
+                                                  "Konfirmasi Keluar",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+
+            // Jika pengguna memilih "Yes", keluar dari aplikasi
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnLupaPass_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -12,8 +12,8 @@ namespace PBO_B08.App.Model
     {
         public M_Akun(string username, string password)
         {
-            username = username;
-            password = password;
+            this.username = username;
+            this.password = password;
         }
 
         [ForeignKey("M_Dokter")]
