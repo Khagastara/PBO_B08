@@ -12,6 +12,6 @@ namespace PBO_B08.App.Model
         [Key]
         public int idObat {  get; set; }
         [Required]
-        public int namaObat {  get; set; }
+        public string namaObat {  get; set; }
     }
 }

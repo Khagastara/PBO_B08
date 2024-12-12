@@ -31,7 +31,7 @@ namespace PBO_B08.Views
             cmbJenisKelamin.Items.Clear();
             cmbJenisKelamin.Items.Add("Laki-laki");
             cmbJenisKelamin.Items.Add("Perempuan");
-            cmbJenisKelamin.DropDownStyle = ComboBoxStyle.DropDownList; // Ensure the user selects only the predefined values
+            cmbJenisKelamin.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         public void ClearTextBox()

@@ -52,26 +52,19 @@ namespace PBO_B08.Views
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            V_Logout logoutControl = new V_Logout();
-            logoutControl.Dock = DockStyle.Fill;
+            V_Logout logout = new V_Logout();
+            logout.Show();
 
-            logoutControl.OnLogoutConfirmed += () =>
-            {
-                V_Login loginForm = new V_Login();
-                loginForm.Show();
+        }
 
-                this.Close();
-            };
 
-            panelOverlay.Controls.Clear(); 
-            panelOverlay.Controls.Add(logoutControl);
-            panelOverlay.BringToFront();        
-            panelOverlay.Visible = true;
-            panelOverlay.BackColor = Color.FromArgb(100, 0, 0, 0);
-            panelPopup.Location = new Point(
-                (panelOverlay.Width - panelPopup.Width) / 2,
-                (panelOverlay.Height - panelPopup.Height) / 2
-            );
+        private void btnObat_Click(object sender, EventArgs e)
+        {
+            V_HalObat v_HalObat = new V_HalObat();
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(v_HalObat);
+            v_HalObat.Dock = DockStyle.Fill;
         }
     }
 }

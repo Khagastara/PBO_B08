@@ -17,6 +17,6 @@ namespace PBO_B08.App.Model
         [ForeignKey("M_Pasien")]
         public int idPasien { get; set; }
         [Required]
-        public DateOnly tanggalPemeriksaan { get; set; }
+        public DateTime tanggalPemeriksaan { get; set; }
     }
 }

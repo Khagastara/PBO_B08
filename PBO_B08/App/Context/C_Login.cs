@@ -42,6 +42,9 @@ namespace PBO_B08.App.Context
                         accountLogin = new M_Akun(username, password);
                         accountLogin.username = (string)reader["username"];
                         accountLogin.password = (string)reader["password"];
+                        accountLogin.idDokter = (int)reader["iddokter"];
+
+                        UserSession.LoggedInDoctorId = accountLogin.idDokter;
                     }
                 }
             }
