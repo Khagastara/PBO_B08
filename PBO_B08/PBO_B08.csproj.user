@@ -7,6 +7,12 @@
     <Compile Update="customeToolBox\customePanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="Views\V_EditProfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\V_HalProfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Views\V_HalObat.cs">
       <SubType>UserControl</SubType>
     </Compile>

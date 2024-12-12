@@ -20,6 +20,41 @@ namespace PBO_B08.App.Context
             return userData;
         }
 
+        private void ExecuteNonQuery(string query, NpgsqlParameter[] parameters)
+        {
+            using (var conn = new NpgsqlConnection("Host=LocalHost;Port=5432;Username=postgres;Password=082143;Database=PBO_B8"))
+            {
+                try
+                {
+                    conn.Open();
+                    using (var cmd = new NpgsqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddRange(parameters);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Database error: {ex.Message}", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+        public void UpdateUserProfile(int doctorId, string newUsername, string newPassword)
+        {
+            string query = @"UPDATE akun 
+                     SET username = @username, password = @password 
+                     WHERE iddokter = @idDokter";
+
+            NpgsqlParameter[] parameters =
+            {
+        new NpgsqlParameter("@username", newUsername),
+        new NpgsqlParameter("@password", newPassword),
+        new NpgsqlParameter("@idDokter", doctorId)
+    };
+
+            ExecuteNonQuery(query, parameters);
+        }
+
         public M_Akun Validate(string username, string password)
         {
             M_Akun accountLogin = null;
@@ -45,6 +80,8 @@ namespace PBO_B08.App.Context
                         accountLogin.idDokter = (int)reader["iddokter"];
 
                         UserSession.LoggedInDoctorId = accountLogin.idDokter;
+                        UserSession.LoggedInUsername = accountLogin.username; 
+                        UserSession.LoggedInPassword = accountLogin.password; 
                     }
                 }
             }

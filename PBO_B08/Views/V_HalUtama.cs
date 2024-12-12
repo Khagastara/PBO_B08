@@ -68,6 +68,7 @@ namespace PBO_B08.Views
 
         private void btnRekam_Click(object sender, EventArgs e)
         {
+            V_HalRekam v_HalRekam = new V_HalRekam();               
             panel1.Controls.Clear();
             panel1.Controls.Add(v_HalRekam);
             v_HalRekam.Dock = DockStyle.Fill;
@@ -88,6 +89,30 @@ namespace PBO_B08.Views
             panel1.Controls.Clear();
             panel1.Controls.Add(v_HalObat);
             v_HalObat.Dock = DockStyle.Fill;
+        }
+
+        private void LoadUserControl(UserControl userControl)
+        {
+            panelContent.Controls.Clear(); 
+            userControl.Dock = DockStyle.Fill; 
+            panelContent.Controls.Add(userControl); 
+        }
+
+        public void ShowUserControl(UserControl userControl)
+        {
+            panelContent.Controls.Clear();
+            userControl.Dock = DockStyle.Fill;
+            panelContent.Controls.Add(userControl);
+        }
+
+        private void btnProfil_Click(object sender, EventArgs e)
+        {
+            V_HalProfil profilForm = new V_HalProfil();
+
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(profilForm);
+            profilForm.Dock = DockStyle.Fill;
         }
     }
 }
