@@ -44,8 +44,8 @@ namespace PBO_B08.Views
             try
             {
                 dgvRekamMedis.AllowUserToAddRows = false;
+                dgvRekamMedis.RowHeadersVisible = false;
 
-                // Ambil data rekam medis dari database
                 DataTable dataRekam = C_HalPemeriksaan.All();
                 if (dataRekam == null)
                 {
@@ -53,31 +53,67 @@ namespace PBO_B08.Views
                     return;
                 }
 
-                // Tampilkan data pada DataGridView
                 dgvRekamMedis.Columns.Clear();
+
+                DataColumn noColumn = new DataColumn("No", typeof(int));
+                dataRekam.Columns.Add(noColumn);
+
+                for (int i = 0; i < dataRekam.Rows.Count; i++)
+                {
+                    dataRekam.Rows[i]["No"] = i + 1;
+                    Width = 10;
+                }
+
+                dataRekam.Columns["No"].SetOrdinal(0);
+
                 dgvRekamMedis.DataSource = dataRekam;
 
-                // Ubah header dan visibilitas kolom sesuai kebutuhan
-                if (dgvRekamMedis.Columns["idRekam"] != null) dgvRekamMedis.Columns["idRekam"].Visible = false;
-                if (dgvRekamMedis.Columns["namaPasien"] != null) dgvRekamMedis.Columns["namaPasien"].HeaderText = "Nama Pasien";
-                if (dgvRekamMedis.Columns["namaDokter"] != null) dgvRekamMedis.Columns["namaDokter"].HeaderText = "Nama Dokter";
-                if (dgvRekamMedis.Columns["tanggalPemeriksaan"] != null) dgvRekamMedis.Columns["tanggalPemeriksaan"].HeaderText = "Tanggal Pemeriksaan";
-                if (dgvRekamMedis.Columns["hasilPemeriksaan"] != null) dgvRekamMedis.Columns["hasilPemeriksaan"].HeaderText = "Hasil Pemeriksaan";
-                if (dgvRekamMedis.Columns["Diagnosis"] != null) dgvRekamMedis.Columns["Diagnosis"].HeaderText = "Diagnosis";
-                if (dgvRekamMedis.Columns["namaObat"] != null) dgvRekamMedis.Columns["namaObat"].HeaderText = "namaObat";
-
-                // Tambahkan kolom nomor urut
-                DataGridViewTextBoxColumn nomorColumn = new DataGridViewTextBoxColumn
+                if (dgvRekamMedis.Columns["No"] != null)
                 {
-                    HeaderText = "No",
-                    Name = "Nomor"
-                };
-                dgvRekamMedis.Columns.Insert(0, nomorColumn);
+                    dgvRekamMedis.Columns["No"].HeaderText = "No";
+                    dgvRekamMedis.Columns["No"].Width = 50;
+                    dgvRekamMedis.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    dgvRekamMedis.Columns["No"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
 
-                // Isi kolom nomor urut
-                for (int i = 0; i < dgvRekamMedis.Rows.Count; i++)
+                if (dgvRekamMedis.Columns["namaPasien"] != null)
                 {
-                    dgvRekamMedis.Rows[i].Cells["Nomor"].Value = (i + 1).ToString();
+                    dgvRekamMedis.Columns["namaPasien"].HeaderText = "Nama Pasien";
+                    dgvRekamMedis.Columns["namaPasien"].Width = 150;
+                    dgvRekamMedis.Columns["namaPasien"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dgvRekamMedis.Columns["namaDokter"] != null)
+                {
+                    dgvRekamMedis.Columns["namaDokter"].HeaderText = "Nama Dokter";
+                    dgvRekamMedis.Columns["namaDokter"].Width = 150;
+                    dgvRekamMedis.Columns["namaDokter"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dgvRekamMedis.Columns["tanggalPemeriksaan"] != null)
+                {
+                    dgvRekamMedis.Columns["tanggalPemeriksaan"].HeaderText = "Tanggal Pemeriksaan";
+                    dgvRekamMedis.Columns["tanggalPemeriksaan"].Width = 120;
+                    dgvRekamMedis.Columns["tanggalPemeriksaan"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dgvRekamMedis.Columns["hasilPemeriksaan"] != null)
+                {
+                    dgvRekamMedis.Columns["hasilPemeriksaan"].HeaderText = "Hasil Pemeriksaan";
+                    dgvRekamMedis.Columns["hasilPemeriksaan"].Width = 200;
+                    dgvRekamMedis.Columns["hasilPemeriksaan"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+                if (dgvRekamMedis.Columns["Diagnosis"] != null)
+                {
+                    dgvRekamMedis.Columns["Diagnosis"].HeaderText = "Diagnosis";
+                    dgvRekamMedis.Columns["Diagnosis"].Width = 120;
+                    dgvRekamMedis.Columns["Diagnosis"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+                if (dgvRekamMedis.Columns["Obat"] != null)
+                {
+                    dgvRekamMedis.Columns["Obat"].HeaderText = "Daftar Obat";
+                    dgvRekamMedis.Columns["Obat"].Width = 300;
+                    dgvRekamMedis.Columns["Obat"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 }
             }
             catch (Exception ex)

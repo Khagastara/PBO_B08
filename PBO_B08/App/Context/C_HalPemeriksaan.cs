@@ -16,12 +16,14 @@ namespace PBO_B08.App.Context
     {
         public static DataTable All()
         {
-            string query = @"SELECT pe.idRekam, pa.namaPasien, d.namaDokter, pe.tanggalPemeriksaan, hp.hasilPemeriksaan, hp.Diagnosis, o.namaObat
+            string query = @"SELECT  pa.namaPasien, d.namaDokter, pe.tanggalPemeriksaan, hp.hasilPemeriksaan, hp.Diagnosis, STRING_AGG(o.namaObat, ', ') AS Obat
                              FROM Pemeriksaan pe
                              JOIN Pasien pa ON pa.idPasien = pe.idPasien
                              JOIN Dokter d ON d.idDokter = pe.idDokter
                              JOIN hasilPemeriksaan hp ON hp.idRekam = pe.idRekam
-                             JOIN obat o ON o.idObat = hp.idObat";
+                             JOIN obat o ON o.idObat = hp.idObat
+                             GROUP BY pa.namaPasien, d.namaDokter, pe.tanggalPemeriksaan, hp.hasilPemeriksaan, hp.Diagnosis
+                             ORDER BY pa.namaPasien, pe.tanggalPemeriksaan";
 
             DataTable dataRekam = queryExecutor(query);
             return dataRekam;
@@ -29,12 +31,14 @@ namespace PBO_B08.App.Context
         
         public static DataTable getPemeriksaanById(int idRekam)
         {
-            string query = @"SELECT pe.idRekam, pa.namaPasien, d.namaDokter, pe.tanggalPemeriksaan, hp.hasilPemeriksaan, hp.Diagnosis, o.namaObat
+            string query = @"SELECT  pa.namaPasien, d.namaDokter, pe.tanggalPemeriksaan, hp.hasilPemeriksaan, hp.Diagnosis, STRING_AGG(o.namaObat, ', ') AS Obat
                              FROM Pemeriksaan pe
                              JOIN Pasien pa ON pa.idPasien = pe.idPasien
                              JOIN Dokter d ON d.idDokter = pe.idDokter
                              JOIN hasilPemeriksaan hp ON hp.idRekam = pe.idRekam
-                             JOIN obat o ON o.idObat = hp.idObat
+                             JOIN obat o ON o.idObat = hp.idObat
+                             GROUP BY pa.namaPasien, d.namaDokter, pe.tanggalPemeriksaan, hp.hasilPemeriksaan, hp.Diagnosis
+                             ORDER BY pa.namaPasien, pe.tanggalPemeriksaan
                              WHERE pe.idRekam = @idRekam";
 
             NpgsqlParameter[] Parameters =
