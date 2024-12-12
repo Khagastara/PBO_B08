@@ -80,7 +80,7 @@
             btnTidak.UseVisualStyleBackColor = false;
             btnTidak.Click += btnTidak_Click;
             // 
-            // V_Logout1
+            // V_Logout
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -90,7 +90,8 @@
             Controls.Add(btnYa);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "V_Logout1";
+            Name = "V_Logout";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "V_Logout1";
             ResumeLayout(false);
             PerformLayout();
