@@ -21,26 +21,14 @@ namespace PBO_B08.Views
 
         private void V_HalUtama_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
+
         }
 
         private void V_HalUtama_Resize(object sender, EventArgs e)
         {
-            ResizePanels();
+            
         }
 
-        private void ResizePanels()
-        {
-            int formWidth = this.ClientSize.Width;
-            int formHeight = this.ClientSize.Height;
-
-            panel1.Width = (int)(formWidth * 0.3);
-            panel1.Height = formHeight;
-
-            panel2.Width = (int)(formWidth * 0.7);
-            panel2.Height = formHeight;
-        }
 
         private void btnHomePage_Click(object sender, EventArgs e)
         {
@@ -68,7 +56,12 @@ namespace PBO_B08.Views
 
         private void btnRekam_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             V_HalRekam v_HalRekam = new V_HalRekam();               
+=======
+            V_HalRekam v_HalRekam = new V_HalRekam();
+
+>>>>>>> main
             panel1.Controls.Clear();
             panel1.Controls.Add(v_HalRekam);
             v_HalRekam.Dock = DockStyle.Fill;

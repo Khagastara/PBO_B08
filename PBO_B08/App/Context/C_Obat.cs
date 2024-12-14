@@ -48,5 +48,21 @@ namespace PBO_B08.App.Context
 
             commandExecutor(query, parameters);
         }
+
+        public static bool IsObatExists(string namaObat)
+        {
+            string query = @"SELECT COUNT(*) FROM obat WHERE LOWER(namaObat) = LOWER(@namaObat)";
+
+            NpgsqlParameter[] parameters =
+            {
+                new NpgsqlParameter("@namaObat", NpgsqlTypes.NpgsqlDbType.Varchar)
+                {
+                    Value = namaObat
+                }
+            };
+
+            DataTable result = queryExecutor(query, parameters);
+            return Convert.ToInt32(result.Rows[0][0]) > 0;
+        }
     }
 }

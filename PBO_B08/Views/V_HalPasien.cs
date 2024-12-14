@@ -32,6 +32,7 @@ namespace PBO_B08.Views
             try
             {
                 dataGridView1.AllowUserToAddRows = false;
+                dataGridView1.RowHeadersVisible = false;
 
                 DataTable dataPasien = C_Pasien.All();
                 if (dataPasien == null)
