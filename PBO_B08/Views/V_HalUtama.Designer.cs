@@ -31,12 +31,13 @@
             panel1 = new Panel();
             panelOverlay = new Panel();
             panelPopup = new Panel();
+            panelContent = new Panel();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             btnHomepage = new customeToolBox.RoundedButton();
             panel2 = new Panel();
             roundedButton2 = new customeToolBox.RoundedButton();
-            roundedButton1 = new customeToolBox.RoundedButton();
+            btnProfil = new customeToolBox.RoundedButton();
             roundedButton4 = new customeToolBox.RoundedButton();
             btnPemeriksaan = new customeToolBox.RoundedButton();
             btnPasien = new customeToolBox.RoundedButton();
@@ -51,6 +52,7 @@
             // 
             panel1.BackColor = Color.FromArgb(224, 224, 224);
             panel1.Controls.Add(panelOverlay);
+            panel1.Controls.Add(panelContent);
             panel1.Dock = DockStyle.Right;
             panel1.Location = new Point(238, 0);
             panel1.Name = "panel1";
@@ -76,6 +78,14 @@
             panelPopup.Name = "panelPopup";
             panelPopup.Size = new Size(500, 300);
             panelPopup.TabIndex = 0;
+            // 
+            // panelContent
+            // 
+            panelContent.Dock = DockStyle.Fill;
+            panelContent.Location = new Point(0, 0);
+            panelContent.Name = "panelContent";
+            panelContent.Size = new Size(1024, 673);
+            panelContent.TabIndex = 2;
             // 
             // label1
             // 
@@ -123,7 +133,7 @@
             // 
             panel2.BackColor = Color.FromArgb(4, 118, 208);
             panel2.Controls.Add(roundedButton2);
-            panel2.Controls.Add(roundedButton1);
+            panel2.Controls.Add(btnProfil);
             panel2.Controls.Add(roundedButton4);
             panel2.Controls.Add(btnPemeriksaan);
             panel2.Controls.Add(btnPasien);
@@ -155,23 +165,24 @@
             roundedButton2.UseVisualStyleBackColor = false;
             roundedButton2.Click += btnLogout_Click;
             // 
-            // roundedButton1
+            // btnProfil
             // 
-            roundedButton1.BackColor = Color.FromArgb(4, 118, 208);
-            roundedButton1.BorderColor = Color.Transparent;
-            roundedButton1.BorderRadius = 20;
-            roundedButton1.BorderWidth = 2;
-            roundedButton1.FlatStyle = FlatStyle.Flat;
-            roundedButton1.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            roundedButton1.ForeColor = Color.White;
-            roundedButton1.Image = Properties.Resources.Profile_icon3;
-            roundedButton1.ImageAlignment = ContentAlignment.MiddleLeft;
-            roundedButton1.Location = new Point(12, 202);
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(220, 50);
-            roundedButton1.TabIndex = 8;
-            roundedButton1.Text = "Profil";
-            roundedButton1.UseVisualStyleBackColor = false;
+            btnProfil.BackColor = Color.FromArgb(4, 118, 208);
+            btnProfil.BorderColor = Color.Transparent;
+            btnProfil.BorderRadius = 20;
+            btnProfil.BorderWidth = 2;
+            btnProfil.FlatStyle = FlatStyle.Flat;
+            btnProfil.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnProfil.ForeColor = Color.White;
+            btnProfil.Image = Properties.Resources.Profile_icon3;
+            btnProfil.ImageAlignment = ContentAlignment.MiddleLeft;
+            btnProfil.Location = new Point(12, 202);
+            btnProfil.Name = "btnProfil";
+            btnProfil.Size = new Size(220, 50);
+            btnProfil.TabIndex = 8;
+            btnProfil.Text = "Profil";
+            btnProfil.UseVisualStyleBackColor = false;
+            btnProfil.Click += btnProfil_Click;
             // 
             // roundedButton4
             // 
@@ -264,15 +275,16 @@
         private Label label1;
         private PictureBox pictureBox1;
         private customeToolBox.RoundedButton btnHomepage;
-        private static Panel panel2;
         private customeToolBox.RoundedButton btnPasien;
         private Label label2;
         private customeToolBox.RoundedButton roundedButton4;
         private customeToolBox.RoundedButton btnPemeriksaan;
-        private customeToolBox.RoundedButton roundedButton1;
+        private customeToolBox.RoundedButton btnProfil;
         private customeToolBox.RoundedButton roundedButton2;
         private Panel panelOverlay;
         private Panel panelPopup;
+        private Panel panelContent;
+        private Panel panel2;
         public static Panel panel1;
     }
 }
