@@ -1,142 +1,3 @@
-C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.exe
-C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.deps.json
-C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.runtimeconfig.json
-C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.dll
-C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.pdb
-C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Project PBO\PBO_Project anyar\PBO_B08\bin\Debug\net8.0-windows\Npgsql.dll
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.AssemblyReference.cache
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Properties.Resources.resources
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalUtama.resources
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.V_Login.resources
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_MembuatDataPasien.resources
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.GenerateResource.cache
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.GeneratedMSBuildEditorConfig.editorconfig
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfoInputs.cache
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfo.cs
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.CoreCompileInputs.cache
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.sourcelink.json
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.Up2Date
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.dll
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_B08.dll
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
-C:\Project PBO\PBO_Project anyar\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.AssemblyReference.cache
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Properties.Resources.resources
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddPasien.resources
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalPasien.resources
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalRekam.resources
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalUtama.resources
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.V_Login.resources
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_MembuatDataPasien.resources
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.GenerateResource.cache
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfoInputs.cache
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfo.cs
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.sourcelink.json
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.dll
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_B08.dll
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.exe
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.deps.json
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.runtimeconfig.json
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.dll
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.pdb
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Npgsql.dll
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.Up2Date
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
-C:\Users\Lenovo\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.exe
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.deps.json
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.runtimeconfig.json
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.dll
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.pdb
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Npgsql.dll
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.AssemblyReference.cache
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Properties.Resources.resources
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddPasien.resources
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalPasien.resources
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalRekam.resources
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalUtama.resources
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.V_Login.resources
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_MembuatDataPasien.resources
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.GenerateResource.cache
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfoInputs.cache
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfo.cs
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.CoreCompileInputs.cache
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.sourcelink.json
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.Up2Date
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.dll
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_B08.dll
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
-C:\Users\mikoi\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.exe
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.deps.json
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.runtimeconfig.json
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.dll
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.pdb
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Npgsql.dll
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.AssemblyReference.cache
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Properties.Resources.resources
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddPasien.resources
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalPasien.resources
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalRekam.resources
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalUtama.resources
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.V_Login.resources
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.GenerateResource.cache
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfoInputs.cache
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfo.cs
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.CoreCompileInputs.cache
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.sourcelink.json
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.Up2Date
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.dll
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_B08.dll
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_Logout.resources
-C:\PBO_AURIZ\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.exe
-C:\PBO_AURIZ\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.deps.json
-C:\PBO_AURIZ\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.runtimeconfig.json
-C:\PBO_AURIZ\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.dll
-C:\PBO_AURIZ\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.pdb
-C:\PBO_AURIZ\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\PBO_AURIZ\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\PBO_AURIZ\PBO_B08\bin\Debug\net8.0-windows\Npgsql.dll
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.AssemblyReference.cache
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Properties.Resources.resources
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddPasien.resources
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalPasien.resources
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalRekam.resources
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalUtama.resources
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.V_Login.resources
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_Logout.resources
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_MembuatDataPasien.resources
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.GenerateResource.cache
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.GeneratedMSBuildEditorConfig.editorconfig
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfoInputs.cache
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfo.cs
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.CoreCompileInputs.cache
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.sourcelink.json
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.Up2Date
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.dll
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_B08.dll
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
-C:\PBO_AURIZ\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
-C:\PBO_AURIZ\PBO_B08\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.exe
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.deps.json
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.runtimeconfig.json
@@ -149,11 +10,16 @@ C:\Users\Owner\source\repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\Npgsql.dll
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.AssemblyReference.cache
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Properties.Resources.resources
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddPasien.resources
+C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddRekam.resources
+C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_EditProfil.resources
+C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalObat.resources
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalPasien.resources
+C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalProfil.resources
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalRekam.resources
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalUtama.resources
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.V_Login.resources
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_Logout.resources
+C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_PilihPasien.resources
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.GenerateResource.cache
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfoInputs.cache
@@ -166,79 +32,3 @@ C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
-C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_PilihPasien.resources
-C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddRekam.resources
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.AssemblyReference.cache
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Properties.Resources.resources
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddPasien.resources
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddRekam.resources
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalObat.resources
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalPasien.resources
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalRekam.resources
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalUtama.resources
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.V_Login.resources
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_Logout.resources
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_PilihPasien.resources
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.GenerateResource.cache
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfoInputs.cache
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfo.cs
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.CoreCompileInputs.cache
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.sourcelink.json
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.dll
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_B08.dll
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
-C:\Users\mikoi\Source\Repos\E\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.exe
-C:\Users\mikoi\Source\Repos\E\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.deps.json
-C:\Users\mikoi\Source\Repos\E\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.runtimeconfig.json
-C:\Users\mikoi\Source\Repos\E\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.dll
-C:\Users\mikoi\Source\Repos\E\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.pdb
-C:\Users\mikoi\Source\Repos\E\PBO_B08\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
-C:\Users\mikoi\Source\Repos\E\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\mikoi\Source\Repos\E\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\mikoi\Source\Repos\E\PBO_B08\bin\Debug\net8.0-windows\Npgsql.dll
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.Up2Date
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
-C:\Users\mikoi\Source\Repos\E\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
-C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalObat.resources
-<<<<<<< HEAD
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddRekam.resources
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalObat.resources
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalProfil.resources
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_PilihPasien.resources
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
-C:\Users\Gusti\Source\Repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_EditProfil.resources
-=======
-C:\Users\mikoi\Source\Repos\A\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.exe
-C:\Users\mikoi\Source\Repos\A\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.deps.json
-C:\Users\mikoi\Source\Repos\A\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.runtimeconfig.json
-C:\Users\mikoi\Source\Repos\A\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.dll
-C:\Users\mikoi\Source\Repos\A\PBO_B08\bin\Debug\net8.0-windows\PBO_B08.pdb
-C:\Users\mikoi\Source\Repos\A\PBO_B08\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
-C:\Users\mikoi\Source\Repos\A\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\mikoi\Source\Repos\A\PBO_B08\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\mikoi\Source\Repos\A\PBO_B08\bin\Debug\net8.0-windows\Npgsql.dll
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.AssemblyReference.cache
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Properties.Resources.resources
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddPasien.resources
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_AddRekam.resources
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalObat.resources
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalPasien.resources
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalRekam.resources
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_HalUtama.resources
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.V_Login.resources
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_Logout.resources
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_PilihPasien.resources
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.GenerateResource.cache
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfoInputs.cache
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.AssemblyInfo.cs
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.CoreCompileInputs.cache
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.sourcelink.json
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.csproj.Up2Date
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.dll
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\refint\PBO_B08.dll
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.pdb
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.genruntimeconfig.cache
-C:\Users\mikoi\Source\Repos\A\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
->>>>>>> main

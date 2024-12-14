@@ -41,7 +41,6 @@
             roundedButton4 = new customeToolBox.RoundedButton();
             btnPemeriksaan = new customeToolBox.RoundedButton();
             btnPasien = new customeToolBox.RoundedButton();
-            label2 = new Label();
             panel1.SuspendLayout();
             panelOverlay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -138,7 +137,6 @@
             panel2.Controls.Add(btnPemeriksaan);
             panel2.Controls.Add(btnPasien);
             panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(label2);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(btnHomepage);
             panel2.Location = new Point(0, 0);
@@ -196,7 +194,7 @@
             roundedButton4.Image = Properties.Resources.Medicine_Icon1;
             roundedButton4.ImageAlign = ContentAlignment.MiddleLeft;
             roundedButton4.ImageAlignment = ContentAlignment.MiddleLeft;
-            roundedButton4.Location = new Point(12, 317);
+            roundedButton4.Location = new Point(12, 373);
             roundedButton4.Name = "roundedButton4";
             roundedButton4.Size = new Size(220, 50);
             roundedButton4.TabIndex = 7;
@@ -216,7 +214,7 @@
             btnPemeriksaan.ForeColor = Color.White;
             btnPemeriksaan.Image = Properties.Resources._97q2oiq7i495p7gcc0h7q7js1n;
             btnPemeriksaan.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnPemeriksaan.Location = new Point(12, 376);
+            btnPemeriksaan.Location = new Point(12, 317);
             btnPemeriksaan.Name = "btnPemeriksaan";
             btnPemeriksaan.Size = new Size(220, 50);
             btnPemeriksaan.TabIndex = 6;
@@ -235,22 +233,13 @@
             btnPasien.ForeColor = Color.White;
             btnPasien.Image = Properties.Resources.imgbin_patient_icon_blood_donation_icon_png2;
             btnPasien.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnPasien.Location = new Point(12, 261);
+            btnPasien.Location = new Point(10, 261);
             btnPasien.Name = "btnPasien";
             btnPasien.Size = new Size(220, 50);
             btnPasien.TabIndex = 5;
             btnPasien.Text = " Data Pasien";
             btnPasien.UseVisualStyleBackColor = false;
             btnPasien.Click += btnPasien_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(12, 111);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Tool";
             // 
             // V_HalUtama
             // 
@@ -276,7 +265,6 @@
         private PictureBox pictureBox1;
         private customeToolBox.RoundedButton btnHomepage;
         private customeToolBox.RoundedButton btnPasien;
-        private Label label2;
         private customeToolBox.RoundedButton roundedButton4;
         private customeToolBox.RoundedButton btnPemeriksaan;
         private customeToolBox.RoundedButton btnProfil;
@@ -285,6 +273,6 @@
         private Panel panelPopup;
         private Panel panelContent;
         private Panel panel2;
-        public static Panel panel1;
+        public Panel panel1;
     }
 }
