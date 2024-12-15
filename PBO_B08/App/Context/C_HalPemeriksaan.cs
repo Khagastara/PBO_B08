@@ -127,5 +127,14 @@ namespace PBO_B08.App.Context
 
             commandExecutor(query, parameters);
         }
+
+        // Method untuk menghitung total hasil rekam medis
+        public static int TotalRekamMedis()
+        {
+            string query = "SELECT COUNT(*) FROM hasilPemeriksaan";
+            object result = scalarExecutor(query);
+            return result != null ? Convert.ToInt32(result) : 0;
+        }
     }
-}
+} 
+

@@ -273,6 +273,6 @@
         private Panel panelPopup;
         private Panel panelContent;
         private Panel panel2;
-        public Panel panel1;
+        public static Panel panel1;
     }
 }
