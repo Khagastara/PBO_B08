@@ -69,4 +69,3 @@ C:\Final Bism PBO\PBO_B08\obj\Debug\net8.0-windows\ref\PBO_B08.dll
 C:\Final Bism PBO\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_LupaPass.resources
 C:\Final Bism PBO\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_Homepage.resources
 C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_Homepage.resources
-C:\Users\Owner\source\repos\PBO_B08\PBO_B08\obj\Debug\net8.0-windows\PBO_B08.Views.V_LupaPass.resources

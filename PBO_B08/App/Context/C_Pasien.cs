@@ -16,7 +16,7 @@ namespace PBO_B08.App.Context
 
         public static DataTable All()
         {
-            string query = @"SELECT * FROM pasien";
+            string query = @"SELECT * FROM pasien ORDER BY namaPasien ASC";
 
             DataTable dataPasien = queryExecutor(query);
             return dataPasien;
@@ -24,7 +24,9 @@ namespace PBO_B08.App.Context
 
         public static DataTable getPasienById(int idPasien)
         {
-            string query = @"SELECT * FROM pasien WHERE idPasien = @idPasien";
+            string query = @"SELECT * FROM pasien
+                             WHERE idPasien = @idPasien
+                             ORDER BY namaPasien ASC";
 
             NpgsqlParameter[] parameters =
             {

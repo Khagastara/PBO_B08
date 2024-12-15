@@ -28,6 +28,58 @@ namespace PBO_B08.Views
 
                 DataTable dataObat = C_Obat.All();
                 dataGridViewObat.DataSource = dataObat;
+
+                if (dataGridViewObat.Columns["idObat"] != null)
+                {
+                    dataGridViewObat.Columns["idObat"].HeaderText = "No";
+                    dataGridViewObat.Columns["idObat"].Width = 50;
+                    dataGridViewObat.Columns["idObat"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    dataGridViewObat.Columns["idObat"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridViewObat.Columns["namaObat"] != null)
+                {
+                    dataGridViewObat.Columns["namaObat"].HeaderText = "Nama Obat";
+                    dataGridViewObat.Columns["namaObat"].Width = 500;
+                    dataGridViewObat.Columns["namaObat"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Terjadi kesalahan saat memuat data: {ex.Message}");
+            }
+        }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+            string namaObat = txtTelusuriObat.Text?.Trim();
+            if (string.IsNullOrEmpty(namaObat))
+            {
+                LoadDataObat();
+            }
+
+            try
+            {
+                dataGridViewObat.AllowUserToAddRows = false;
+                dataGridViewObat.RowHeadersVisible = false;
+
+                DataTable dataObat = C_Obat.getObatByName(namaObat);
+                dataGridViewObat.DataSource = dataObat;
+
+                if (dataGridViewObat.Columns["idObat"] != null)
+                {
+                    dataGridViewObat.Columns["idObat"].HeaderText = "No";
+                    dataGridViewObat.Columns["idObat"].Width = 50;
+                    dataGridViewObat.Columns["idObat"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    dataGridViewObat.Columns["idObat"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridViewObat.Columns["namaObat"] != null)
+                {
+                    dataGridViewObat.Columns["namaObat"].HeaderText = "Nama Obat";
+                    dataGridViewObat.Columns["namaObat"].Width = 500;
+                    dataGridViewObat.Columns["namaObat"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
             }
             catch (Exception ex)
             {

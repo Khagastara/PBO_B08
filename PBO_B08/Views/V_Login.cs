@@ -112,20 +112,6 @@ namespace PBO_B08
             }
         }
 
-        private void btnlupapw_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Apakah Anda yakin ingin melanjutkan ke halaman Lupa Password?",
-                                                  "Konfirmasi",
-                                                  MessageBoxButtons.YesNo,
-                                                  MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                V_LupaPass v_LupaPass = new V_LupaPass();
-                v_LupaPass.Show();
-            }
-        }
-
 
         private void usernameTextBox_TextChanged(object sender, EventArgs e)
         {

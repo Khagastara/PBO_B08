@@ -23,7 +23,7 @@ namespace PBO_B08.App.Context
                              JOIN hasilPemeriksaan hp ON hp.idRekam = pe.idRekam
                              JOIN obat o ON o.idObat = hp.idObat
                              GROUP BY pa.namaPasien, d.namaDokter, pe.tanggalPemeriksaan, hp.hasilPemeriksaan, hp.Diagnosis
-                             ORDER BY pa.namaPasien, pe.tanggalPemeriksaan";
+                             ORDER BY pe.tanggalPemeriksaan DESC";
 
             DataTable dataRekam = queryExecutor(query);
             return dataRekam;
@@ -38,7 +38,7 @@ namespace PBO_B08.App.Context
                              JOIN hasilPemeriksaan hp ON hp.idRekam = pe.idRekam
                              JOIN obat o ON o.idObat = hp.idObat
                              GROUP BY pa.namaPasien, d.namaDokter, pe.tanggalPemeriksaan, hp.hasilPemeriksaan, hp.Diagnosis
-                             ORDER BY pa.namaPasien, pe.tanggalPemeriksaan
+                             ORDER BY pe.tanggalPemeriksaan DESC
                              WHERE pe.idRekam = @idRekam";
 
             NpgsqlParameter[] Parameters =
@@ -55,7 +55,7 @@ namespace PBO_B08.App.Context
 
         public static DataTable listPasien()
         {
-            string query = $"SELECT idPasien, namaPasien FROM pasien";
+            string query = $"SELECT * FROM pasien";
 
             DataTable dataRekam = queryExecutor(query);
             return dataRekam;
@@ -63,7 +63,7 @@ namespace PBO_B08.App.Context
 
         public static DataTable searchByName(string namaPasien)
         {
-            string query = $"SELECT idPasien, namaPasien FROM pasien WHERE namaPasien ILIKE @namaPasien";
+            string query = $"SELECT * FROM pasien WHERE namaPasien ILIKE @namaPasien";
             NpgsqlParameter[] parameters =
             {
                 new NpgsqlParameter("@namaPasien", $"%{namaPasien}%")

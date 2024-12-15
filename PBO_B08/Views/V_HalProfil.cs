@@ -27,6 +27,14 @@ namespace PBO_B08.Views
             lblPassword.Text = UserSession.LoggedInPassword;
 
             lblPassword.Text = new string('*', UserSession.LoggedInPassword.Length);
+
+            lbNamaDokter.ReadOnly = false;
+            lbSpesialisasi.ReadOnly = false;
+            lbJenisKelamin.ReadOnly = false;
+            lbEmail.ReadOnly = false;
+            lbNoTelepon.ReadOnly = false;
+            lblUsername.ReadOnly = false;
+            lblPassword.ReadOnly = false;
         }
 
         private void btnEditProfil_Click(object sender, EventArgs e)

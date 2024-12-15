@@ -52,13 +52,56 @@ namespace PBO_B08.Views
                 }
 
                 dataPasien.Columns["No"].SetOrdinal(0);
+
                 dataGridView1.DataSource = dataPasien;
 
-                if (dataGridView1.Columns["idPasien"] != null) dataGridView1.Columns["idPasien"].Visible = false;
-                if (dataGridView1.Columns["namaPasien"] != null) dataGridView1.Columns["namaPasien"].HeaderText = "Nama Pasien";
-                if (dataGridView1.Columns["jenisKelamin"] != null) dataGridView1.Columns["jenisKelamin"].HeaderText = "Jenis Kelamin";
-                if (dataGridView1.Columns["tanggalLahir"] != null) dataGridView1.Columns["tanggalLahir"].HeaderText = "Tanggal Lahir";
-                if (dataGridView1.Columns["Alamat"] != null) dataGridView1.Columns["Alamat"].HeaderText = "Alamat";
+                if (dataGridView1.Columns["idPasien"] != null)
+                {
+                    dataGridView1.Columns["idPasien"].Visible = false;
+                }
+
+                if (dataGridView1.Columns["No"] != null)
+                {
+                    dataGridView1.Columns["No"].HeaderText = "No";
+                    dataGridView1.Columns["No"].Width = 50;
+                    dataGridView1.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    dataGridView1.Columns["No"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["namaPasien"] != null)
+                {
+                    dataGridView1.Columns["namaPasien"].HeaderText = "Nama Pasien";
+                    dataGridView1.Columns["namaPasien"].Width = 250;
+                    dataGridView1.Columns["namaPasien"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["jenisKelamin"] != null)
+                {
+                    dataGridView1.Columns["jenisKelamin"].HeaderText = "Jenis Kelamin";
+                    dataGridView1.Columns["jenisKelamin"].Width = 100;
+                    dataGridView1.Columns["jenisKelamin"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["tanggalLahir"] != null)
+                {
+                    dataGridView1.Columns["tanggalLahir"].HeaderText = "Tanggal Lahir";
+                    dataGridView1.Columns["tanggalLahir"].Width = 100;
+                    dataGridView1.Columns["tanggalLahir"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["noTelepon"] != null)
+                {
+                    dataGridView1.Columns["noTelepon"].HeaderText = "No Telepon";
+                    dataGridView1.Columns["noTelepon"].Width = 130;
+                    dataGridView1.Columns["noTelepon"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["Alamat"] != null)
+                {
+                    dataGridView1.Columns["Alamat"].HeaderText = "Alamat";
+                    dataGridView1.Columns["Alamat"].Width = 150;
+                    dataGridView1.Columns["Alamat"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
 
                 DataGridViewButtonColumn updateButtonColumn = new DataGridViewButtonColumn
                 {
@@ -69,6 +112,13 @@ namespace PBO_B08.Views
                 };
                 dataGridView1.Columns.Add(updateButtonColumn);
 
+                if (dataGridView1.Columns["Update"] != null)
+                {
+                    dataGridView1.Columns["Update"].HeaderText = "Update";
+                    dataGridView1.Columns["Update"].Width = 75;
+                    dataGridView1.Columns["Update"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
                 DataGridViewButtonColumn deleteButtonColumn = new DataGridViewButtonColumn
                 {
                     Name = "Delete",
@@ -77,6 +127,13 @@ namespace PBO_B08.Views
                     UseColumnTextForButtonValue = true
                 };
                 dataGridView1.Columns.Add(deleteButtonColumn);
+
+                if (dataGridView1.Columns["Delete"] != null)
+                {
+                    dataGridView1.Columns["Delete"].HeaderText = "Delete";
+                    dataGridView1.Columns["Delete"].Width = 75;
+                    dataGridView1.Columns["Delete"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
             }
 
             catch (Exception ex)
@@ -165,24 +222,65 @@ namespace PBO_B08.Views
                 }
 
                 dataGridView1.Columns.Clear();
+
+                DataColumn noColumn = new DataColumn("No", typeof(int));
+                dataPasien.Columns.Add(noColumn);
+
+                for (int i = 0; i < dataPasien.Rows.Count; i++)
+                {
+                    dataPasien.Rows[i]["No"] = i + 1;
+                }
+
+                dataPasien.Columns["No"].SetOrdinal(0);
+
                 dataGridView1.DataSource = dataPasien;
 
-                if (dataGridView1.Columns["idPasien"] != null) dataGridView1.Columns["idPasien"].Visible = false;
-                if (dataGridView1.Columns["namaPasien"] != null) dataGridView1.Columns["namaPasien"].HeaderText = "Nama Pasien";
-                if (dataGridView1.Columns["jenisKelamin"] != null) dataGridView1.Columns["jenisKelamin"].HeaderText = "Jenis Kelamin";
-                if (dataGridView1.Columns["tanggalLahir"] != null) dataGridView1.Columns["tanggalLahir"].HeaderText = "Tanggal Lahir";
-                if (dataGridView1.Columns["Alamat"] != null) dataGridView1.Columns["Alamat"].HeaderText = "Alamat";
-
-                DataGridViewTextBoxColumn nomorColumn = new DataGridViewTextBoxColumn
+                if (dataGridView1.Columns["idPasien"] != null)
                 {
-                    HeaderText = "No",
-                    Name = "Nomor"
-                };
-                dataGridView1.Columns.Insert(0, nomorColumn);
+                    dataGridView1.Columns["idPasien"].Visible = false;
+                }
 
-                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                if (dataGridView1.Columns["No"] != null)
                 {
-                    dataGridView1.Rows[i].Cells["Nomor"].Value = (i + 1).ToString();
+                    dataGridView1.Columns["No"].HeaderText = "No";
+                    dataGridView1.Columns["No"].Width = 50;
+                    dataGridView1.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    dataGridView1.Columns["No"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["namaPasien"] != null)
+                {
+                    dataGridView1.Columns["namaPasien"].HeaderText = "Nama Pasien";
+                    dataGridView1.Columns["namaPasien"].Width = 250;
+                    dataGridView1.Columns["namaPasien"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["jenisKelamin"] != null)
+                {
+                    dataGridView1.Columns["jenisKelamin"].HeaderText = "Jenis Kelamin";
+                    dataGridView1.Columns["jenisKelamin"].Width = 100;
+                    dataGridView1.Columns["jenisKelamin"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["tanggalLahir"] != null)
+                {
+                    dataGridView1.Columns["tanggalLahir"].HeaderText = "Tanggal Lahir";
+                    dataGridView1.Columns["tanggalLahir"].Width = 100;
+                    dataGridView1.Columns["tanggalLahir"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["noTelepon"] != null)
+                {
+                    dataGridView1.Columns["noTelepon"].HeaderText = "No Telepon";
+                    dataGridView1.Columns["noTelepon"].Width = 130;
+                    dataGridView1.Columns["noTelepon"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["Alamat"] != null)
+                {
+                    dataGridView1.Columns["Alamat"].HeaderText = "Alamat";
+                    dataGridView1.Columns["Alamat"].Width = 150;
+                    dataGridView1.Columns["Alamat"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 }
 
                 DataGridViewButtonColumn updateButtonColumn = new DataGridViewButtonColumn
@@ -194,6 +292,13 @@ namespace PBO_B08.Views
                 };
                 dataGridView1.Columns.Add(updateButtonColumn);
 
+                if (dataGridView1.Columns["Update"] != null)
+                {
+                    dataGridView1.Columns["Update"].HeaderText = "Update";
+                    dataGridView1.Columns["Update"].Width = 75;
+                    dataGridView1.Columns["Update"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
                 DataGridViewButtonColumn deleteButtonColumn = new DataGridViewButtonColumn
                 {
                     Name = "Delete",
@@ -202,6 +307,13 @@ namespace PBO_B08.Views
                     UseColumnTextForButtonValue = true
                 };
                 dataGridView1.Columns.Add(deleteButtonColumn);
+
+                if (dataGridView1.Columns["Delete"] != null)
+                {
+                    dataGridView1.Columns["Delete"].HeaderText = "Delete";
+                    dataGridView1.Columns["Delete"].Width = 75;
+                    dataGridView1.Columns["Delete"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
             }
             catch (Exception ex)
             {

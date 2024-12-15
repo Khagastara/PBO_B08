@@ -140,6 +140,12 @@ namespace PBO_B08.Views
 
                 MessageBox.Show("Rekam medis berhasil ditambahkan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearForm();
+
+                V_HalRekam v_HalRekam = new V_HalRekam();
+
+                V_HalUtama.panel1.Controls.Clear();
+                V_HalUtama.panel1.Controls.Add(v_HalRekam);
+                v_HalRekam.Dock = DockStyle.Fill;
             }
             catch (Exception ex)
             {

@@ -78,14 +78,14 @@ namespace PBO_B08.Views
 
                 if (dgvRekamMedis.Columns["namaPasien"] != null)
                 {
-                    dgvRekamMedis.Columns["namaPasien"].HeaderText = "Nama Pasien";
+                    dgvRekamMedis.Columns["namaPasien"].HeaderText = "Pasien";
                     dgvRekamMedis.Columns["namaPasien"].Width = 150;
                     dgvRekamMedis.Columns["namaPasien"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 }
 
                 if (dgvRekamMedis.Columns["namaDokter"] != null)
                 {
-                    dgvRekamMedis.Columns["namaDokter"].HeaderText = "Nama Dokter";
+                    dgvRekamMedis.Columns["namaDokter"].HeaderText = "Dokter";
                     dgvRekamMedis.Columns["namaDokter"].Width = 150;
                     dgvRekamMedis.Columns["namaDokter"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 }

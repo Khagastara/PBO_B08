@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace PBO_B08.App.Context
 {
@@ -15,25 +16,24 @@ namespace PBO_B08.App.Context
         private static string table = "obat";
         public static DataTable All()
         {
-            string query = @"SELECT * FROM obat";
+            string query = @"SELECT * FROM obat
+                             ORDER BY namaObat ASC";
 
             DataTable dataObat = queryExecutor(query);
             return dataObat;
         }
 
-        public static DataTable getObatById(int idObat)
+        public static DataTable getObatByName(string namaObat)
         {
-            string query = @"SELECT * FROM obat WHERE idObat = @idObat";
+            string query = @"SELECT * FROM obat WHERE namaObat ILIKE @namaObat
+                             ORDER BY namaObat ASC";
 
             NpgsqlParameter[] parameters =
             {
-                new NpgsqlParameter("@idObat", NpgsqlTypes.NpgsqlDbType.Integer)
-                {
-                    Value = idObat
-                }
+                new NpgsqlParameter("@namaObat", $"%{namaObat}%")
             };
 
-            DataTable dataObat = queryExecutor(query);
+            DataTable dataObat = queryExecutor(query, parameters);
             return dataObat;
         }
 

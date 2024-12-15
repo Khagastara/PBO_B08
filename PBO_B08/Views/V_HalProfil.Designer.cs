@@ -37,26 +37,26 @@
             customeToolBox.RoundedPanel roundedPanel8;
             lblUsername = new TextBox();
             lblPassword = new TextBox();
+            lbNamaDokter = new TextBox();
+            textBox1 = new TextBox();
+            lbSpesialisasi = new TextBox();
+            textBox4 = new TextBox();
+            lbJenisKelamin = new TextBox();
+            textBox6 = new TextBox();
+            lbNoTelepon = new TextBox();
+            textBox8 = new TextBox();
+            lbEmail = new TextBox();
+            textBox10 = new TextBox();
             roundedPanel1 = new customeToolBox.RoundedPanel();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label1 = new Label();
             label3 = new Label();
             label2 = new Label();
             btnEditProfil = new customeToolBox.RoundedButton();
             labelProfil = new Label();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            lbNamaDokter = new TextBox();
-            lbSpesialisasi = new TextBox();
-            textBox4 = new TextBox();
-            label4 = new Label();
-            lbJenisKelamin = new TextBox();
-            textBox6 = new TextBox();
-            label5 = new Label();
-            lbNoTelepon = new TextBox();
-            textBox8 = new TextBox();
-            label6 = new Label();
-            lbEmail = new TextBox();
-            textBox10 = new TextBox();
-            label7 = new Label();
             roundedPanel2 = new customeToolBox.RoundedPanel();
             roundedPanel3 = new customeToolBox.RoundedPanel();
             roundedPanel4 = new customeToolBox.RoundedPanel();
@@ -66,12 +66,12 @@
             roundedPanel8 = new customeToolBox.RoundedPanel();
             roundedPanel2.SuspendLayout();
             roundedPanel3.SuspendLayout();
-            roundedPanel1.SuspendLayout();
             roundedPanel4.SuspendLayout();
             roundedPanel5.SuspendLayout();
             roundedPanel6.SuspendLayout();
             roundedPanel7.SuspendLayout();
             roundedPanel8.SuspendLayout();
+            roundedPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // roundedPanel2
@@ -81,7 +81,7 @@
             roundedPanel2.BorderRadius = 20;
             roundedPanel2.BorderWidth = 2;
             roundedPanel2.Controls.Add(lblUsername);
-            roundedPanel2.Location = new Point(481, 163);
+            roundedPanel2.Location = new Point(483, 262);
             roundedPanel2.Name = "roundedPanel2";
             roundedPanel2.Size = new Size(420, 50);
             roundedPanel2.TabIndex = 8;
@@ -103,7 +103,7 @@
             roundedPanel3.BorderRadius = 20;
             roundedPanel3.BorderWidth = 2;
             roundedPanel3.Controls.Add(lblPassword);
-            roundedPanel3.Location = new Point(481, 261);
+            roundedPanel3.Location = new Point(483, 360);
             roundedPanel3.Name = "roundedPanel3";
             roundedPanel3.Size = new Size(420, 50);
             roundedPanel3.TabIndex = 9;
@@ -118,95 +118,6 @@
             lblPassword.Size = new Size(400, 30);
             lblPassword.TabIndex = 1;
             // 
-            // roundedPanel1
-            // 
-            roundedPanel1.BackColor = Color.FromArgb(4, 118, 208);
-            roundedPanel1.BorderColor = Color.Black;
-            roundedPanel1.BorderRadius = 20;
-            roundedPanel1.BorderWidth = 2;
-            roundedPanel1.Controls.Add(roundedPanel8);
-            roundedPanel1.Controls.Add(label7);
-            roundedPanel1.Controls.Add(roundedPanel7);
-            roundedPanel1.Controls.Add(label6);
-            roundedPanel1.Controls.Add(roundedPanel6);
-            roundedPanel1.Controls.Add(label5);
-            roundedPanel1.Controls.Add(roundedPanel5);
-            roundedPanel1.Controls.Add(label4);
-            roundedPanel1.Controls.Add(roundedPanel4);
-            roundedPanel1.Controls.Add(label1);
-            roundedPanel1.Controls.Add(label3);
-            roundedPanel1.Controls.Add(label2);
-            roundedPanel1.Controls.Add(roundedPanel3);
-            roundedPanel1.Controls.Add(roundedPanel2);
-            roundedPanel1.Controls.Add(btnEditProfil);
-            roundedPanel1.Location = new Point(55, 97);
-            roundedPanel1.Name = "roundedPanel1";
-            roundedPanel1.Size = new Size(923, 470);
-            roundedPanel1.TabIndex = 0;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(481, 231);
-            label3.Name = "label3";
-            label3.Size = new Size(115, 27);
-            label3.TabIndex = 11;
-            label3.Text = "Password";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(481, 132);
-            label2.Name = "label2";
-            label2.Size = new Size(125, 27);
-            label2.TabIndex = 10;
-            label2.Text = "Username";
-            // 
-            // btnEditProfil
-            // 
-            btnEditProfil.BackColor = Color.White;
-            btnEditProfil.BorderColor = Color.Black;
-            btnEditProfil.BorderRadius = 20;
-            btnEditProfil.BorderWidth = 2;
-            btnEditProfil.FlatAppearance.BorderSize = 0;
-            btnEditProfil.FlatStyle = FlatStyle.Flat;
-            btnEditProfil.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEditProfil.ForeColor = Color.FromArgb(4, 118, 208);
-            btnEditProfil.ImageAlignment = ContentAlignment.MiddleLeft;
-            btnEditProfil.Location = new Point(766, 407);
-            btnEditProfil.Name = "btnEditProfil";
-            btnEditProfil.Size = new Size(126, 46);
-            btnEditProfil.TabIndex = 0;
-            btnEditProfil.Text = "Edit Profil";
-            btnEditProfil.UseVisualStyleBackColor = false;
-            btnEditProfil.Click += btnEditProfil_Click;
-            // 
-            // labelProfil
-            // 
-            labelProfil.AutoSize = true;
-            labelProfil.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelProfil.ForeColor = Color.FromArgb(4, 118, 208);
-            labelProfil.Location = new Point(55, 48);
-            labelProfil.Name = "labelProfil";
-            labelProfil.Size = new Size(80, 34);
-            labelProfil.TabIndex = 1;
-            labelProfil.Text = "Profil";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(33, 33);
-            label1.Name = "label1";
-            label1.Size = new Size(160, 27);
-            label1.TabIndex = 12;
-            label1.Text = "Nama Dokter";
-            // 
             // roundedPanel4
             // 
             roundedPanel4.BackColor = Color.White;
@@ -217,8 +128,18 @@
             roundedPanel4.Controls.Add(textBox1);
             roundedPanel4.Location = new Point(33, 63);
             roundedPanel4.Name = "roundedPanel4";
-            roundedPanel4.Size = new Size(420, 50);
+            roundedPanel4.Size = new Size(870, 50);
             roundedPanel4.TabIndex = 9;
+            // 
+            // lbNamaDokter
+            // 
+            lbNamaDokter.BorderStyle = BorderStyle.None;
+            lbNamaDokter.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbNamaDokter.Location = new Point(12, 11);
+            lbNamaDokter.Multiline = true;
+            lbNamaDokter.Name = "lbNamaDokter";
+            lbNamaDokter.Size = new Size(850, 30);
+            lbNamaDokter.TabIndex = 2;
             // 
             // textBox1
             // 
@@ -229,16 +150,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(209, 30);
             textBox1.TabIndex = 1;
-            // 
-            // lbNamaDokter
-            // 
-            lbNamaDokter.BorderStyle = BorderStyle.None;
-            lbNamaDokter.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbNamaDokter.Location = new Point(12, 11);
-            lbNamaDokter.Multiline = true;
-            lbNamaDokter.Name = "lbNamaDokter";
-            lbNamaDokter.Size = new Size(400, 30);
-            lbNamaDokter.TabIndex = 2;
             // 
             // roundedPanel5
             // 
@@ -273,17 +184,6 @@
             textBox4.Size = new Size(209, 30);
             textBox4.TabIndex = 1;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(33, 132);
-            label4.Name = "label4";
-            label4.Size = new Size(138, 27);
-            label4.TabIndex = 14;
-            label4.Text = "Spesialisasi";
-            // 
             // roundedPanel6
             // 
             roundedPanel6.BackColor = Color.White;
@@ -316,17 +216,6 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(209, 30);
             textBox6.TabIndex = 1;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(33, 235);
-            label5.Name = "label5";
-            label5.Size = new Size(166, 27);
-            label5.TabIndex = 16;
-            label5.Text = "Jenis Kelamin";
             // 
             // roundedPanel7
             // 
@@ -361,17 +250,6 @@
             textBox8.Size = new Size(209, 30);
             textBox8.TabIndex = 1;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(33, 329);
-            label6.Name = "label6";
-            label6.Size = new Size(140, 27);
-            label6.TabIndex = 18;
-            label6.Text = "No Telepon";
-            // 
             // roundedPanel8
             // 
             roundedPanel8.BackColor = Color.White;
@@ -380,7 +258,7 @@
             roundedPanel8.BorderWidth = 2;
             roundedPanel8.Controls.Add(lbEmail);
             roundedPanel8.Controls.Add(textBox10);
-            roundedPanel8.Location = new Point(481, 63);
+            roundedPanel8.Location = new Point(483, 162);
             roundedPanel8.Name = "roundedPanel8";
             roundedPanel8.Size = new Size(420, 50);
             roundedPanel8.TabIndex = 19;
@@ -405,16 +283,138 @@
             textBox10.Size = new Size(209, 30);
             textBox10.TabIndex = 1;
             // 
+            // roundedPanel1
+            // 
+            roundedPanel1.BackColor = Color.FromArgb(4, 118, 208);
+            roundedPanel1.BorderColor = Color.Black;
+            roundedPanel1.BorderRadius = 20;
+            roundedPanel1.BorderWidth = 2;
+            roundedPanel1.Controls.Add(roundedPanel8);
+            roundedPanel1.Controls.Add(label7);
+            roundedPanel1.Controls.Add(roundedPanel7);
+            roundedPanel1.Controls.Add(label6);
+            roundedPanel1.Controls.Add(roundedPanel6);
+            roundedPanel1.Controls.Add(label5);
+            roundedPanel1.Controls.Add(roundedPanel5);
+            roundedPanel1.Controls.Add(label4);
+            roundedPanel1.Controls.Add(roundedPanel4);
+            roundedPanel1.Controls.Add(label1);
+            roundedPanel1.Controls.Add(label3);
+            roundedPanel1.Controls.Add(label2);
+            roundedPanel1.Controls.Add(roundedPanel3);
+            roundedPanel1.Controls.Add(roundedPanel2);
+            roundedPanel1.Controls.Add(btnEditProfil);
+            roundedPanel1.Location = new Point(55, 97);
+            roundedPanel1.Name = "roundedPanel1";
+            roundedPanel1.Size = new Size(923, 470);
+            roundedPanel1.TabIndex = 0;
+            // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(481, 33);
+            label7.Location = new Point(483, 132);
             label7.Name = "label7";
             label7.Size = new Size(73, 27);
             label7.TabIndex = 20;
             label7.Text = "Email";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(33, 329);
+            label6.Name = "label6";
+            label6.Size = new Size(140, 27);
+            label6.TabIndex = 18;
+            label6.Text = "No Telepon";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(33, 235);
+            label5.Name = "label5";
+            label5.Size = new Size(166, 27);
+            label5.TabIndex = 16;
+            label5.Text = "Jenis Kelamin";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(33, 132);
+            label4.Name = "label4";
+            label4.Size = new Size(138, 27);
+            label4.TabIndex = 14;
+            label4.Text = "Spesialisasi";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(33, 33);
+            label1.Name = "label1";
+            label1.Size = new Size(160, 27);
+            label1.TabIndex = 12;
+            label1.Text = "Nama Dokter";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(483, 330);
+            label3.Name = "label3";
+            label3.Size = new Size(115, 27);
+            label3.TabIndex = 11;
+            label3.Text = "Password";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(483, 231);
+            label2.Name = "label2";
+            label2.Size = new Size(125, 27);
+            label2.TabIndex = 10;
+            label2.Text = "Username";
+            // 
+            // btnEditProfil
+            // 
+            btnEditProfil.BackColor = Color.White;
+            btnEditProfil.BorderColor = Color.Black;
+            btnEditProfil.BorderRadius = 20;
+            btnEditProfil.BorderWidth = 2;
+            btnEditProfil.FlatAppearance.BorderSize = 0;
+            btnEditProfil.FlatStyle = FlatStyle.Flat;
+            btnEditProfil.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEditProfil.ForeColor = Color.FromArgb(4, 118, 208);
+            btnEditProfil.ImageAlignment = ContentAlignment.MiddleLeft;
+            btnEditProfil.Location = new Point(769, 416);
+            btnEditProfil.Name = "btnEditProfil";
+            btnEditProfil.Size = new Size(126, 46);
+            btnEditProfil.TabIndex = 0;
+            btnEditProfil.Text = "Edit Profil";
+            btnEditProfil.UseVisualStyleBackColor = false;
+            btnEditProfil.Click += btnEditProfil_Click;
+            // 
+            // labelProfil
+            // 
+            labelProfil.AutoSize = true;
+            labelProfil.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelProfil.ForeColor = Color.FromArgb(4, 118, 208);
+            labelProfil.Location = new Point(55, 48);
+            labelProfil.Name = "labelProfil";
+            labelProfil.Size = new Size(80, 34);
+            labelProfil.TabIndex = 1;
+            labelProfil.Text = "Profil";
             // 
             // V_HalProfil
             // 
@@ -428,8 +428,6 @@
             roundedPanel2.PerformLayout();
             roundedPanel3.ResumeLayout(false);
             roundedPanel3.PerformLayout();
-            roundedPanel1.ResumeLayout(false);
-            roundedPanel1.PerformLayout();
             roundedPanel4.ResumeLayout(false);
             roundedPanel4.PerformLayout();
             roundedPanel5.ResumeLayout(false);
@@ -440,6 +438,8 @@
             roundedPanel7.PerformLayout();
             roundedPanel8.ResumeLayout(false);
             roundedPanel8.PerformLayout();
+            roundedPanel1.ResumeLayout(false);
+            roundedPanel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }

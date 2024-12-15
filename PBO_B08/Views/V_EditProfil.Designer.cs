@@ -81,7 +81,7 @@
             roundedPanel8.BorderWidth = 2;
             roundedPanel8.Controls.Add(txtEmail);
             roundedPanel8.Controls.Add(textBox10);
-            roundedPanel8.Location = new Point(481, 63);
+            roundedPanel8.Location = new Point(477, 162);
             roundedPanel8.Name = "roundedPanel8";
             roundedPanel8.Size = new Size(420, 50);
             roundedPanel8.TabIndex = 19;
@@ -180,7 +180,7 @@
             roundedPanel4.Controls.Add(textBox1);
             roundedPanel4.Location = new Point(33, 63);
             roundedPanel4.Name = "roundedPanel4";
-            roundedPanel4.Size = new Size(420, 50);
+            roundedPanel4.Size = new Size(865, 50);
             roundedPanel4.TabIndex = 9;
             // 
             // txtNamaDokter
@@ -190,7 +190,7 @@
             txtNamaDokter.Location = new Point(12, 11);
             txtNamaDokter.Multiline = true;
             txtNamaDokter.Name = "txtNamaDokter";
-            txtNamaDokter.Size = new Size(400, 30);
+            txtNamaDokter.Size = new Size(844, 30);
             txtNamaDokter.TabIndex = 2;
             // 
             // textBox1
@@ -211,7 +211,7 @@
             roundedPanel9.BorderWidth = 2;
             roundedPanel9.Controls.Add(btnEye);
             roundedPanel9.Controls.Add(txtPassword);
-            roundedPanel9.Location = new Point(481, 261);
+            roundedPanel9.Location = new Point(477, 360);
             roundedPanel9.Name = "roundedPanel9";
             roundedPanel9.Size = new Size(420, 50);
             roundedPanel9.TabIndex = 9;
@@ -245,7 +245,7 @@
             roundedPanel10.BorderRadius = 20;
             roundedPanel10.BorderWidth = 2;
             roundedPanel10.Controls.Add(txtUsername);
-            roundedPanel10.Location = new Point(481, 163);
+            roundedPanel10.Location = new Point(477, 262);
             roundedPanel10.Name = "roundedPanel10";
             roundedPanel10.Size = new Size(420, 50);
             roundedPanel10.TabIndex = 8;
@@ -270,7 +270,7 @@
             roundedButton2.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             roundedButton2.ForeColor = Color.FromArgb(4, 118, 208);
             roundedButton2.ImageAlignment = ContentAlignment.MiddleLeft;
-            roundedButton2.Location = new Point(777, 408);
+            roundedButton2.Location = new Point(773, 416);
             roundedButton2.Name = "roundedButton2";
             roundedButton2.Size = new Size(116, 46);
             roundedButton2.TabIndex = 7;
@@ -287,7 +287,7 @@
             roundedButton1.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             roundedButton1.ForeColor = Color.FromArgb(4, 118, 208);
             roundedButton1.ImageAlignment = ContentAlignment.MiddleLeft;
-            roundedButton1.Location = new Point(568, 408);
+            roundedButton1.Location = new Point(568, 416);
             roundedButton1.Name = "roundedButton1";
             roundedButton1.Size = new Size(116, 46);
             roundedButton1.TabIndex = 6;
@@ -300,7 +300,7 @@
             labelProfil.AutoSize = true;
             labelProfil.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelProfil.ForeColor = Color.FromArgb(4, 118, 208);
-            labelProfil.Location = new Point(51, 77);
+            labelProfil.Location = new Point(55, 48);
             labelProfil.Name = "labelProfil";
             labelProfil.Size = new Size(136, 34);
             labelProfil.TabIndex = 9;
@@ -328,7 +328,7 @@
             roundedPanel1.Controls.Add(label2);
             roundedPanel1.Controls.Add(roundedPanel9);
             roundedPanel1.Controls.Add(roundedPanel10);
-            roundedPanel1.Location = new Point(51, 126);
+            roundedPanel1.Location = new Point(55, 97);
             roundedPanel1.Name = "roundedPanel1";
             roundedPanel1.Size = new Size(923, 470);
             roundedPanel1.TabIndex = 8;
@@ -338,7 +338,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(481, 33);
+            label7.Location = new Point(477, 132);
             label7.Name = "label7";
             label7.Size = new Size(73, 27);
             label7.TabIndex = 20;
@@ -393,7 +393,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(481, 231);
+            label3.Location = new Point(477, 330);
             label3.Name = "label3";
             label3.Size = new Size(115, 27);
             label3.TabIndex = 11;
@@ -404,7 +404,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(481, 132);
+            label2.Location = new Point(477, 231);
             label2.Name = "label2";
             label2.Size = new Size(125, 27);
             label2.TabIndex = 10;

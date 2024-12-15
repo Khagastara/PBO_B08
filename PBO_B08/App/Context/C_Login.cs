@@ -23,7 +23,7 @@ namespace PBO_B08.App.Context
         public static void UpdateUserProfile(string name, string specialize, string gender, string email, string phonenumber)
         {
             string query = @"UPDATE Dokter
-                             SET namaDokter = @namaDokter, spesialisasi = @spesialisasi, jenisKelamin = @jenisKelamin, email = @email, noTelepon = @noTelepon
+                             SET namaDokter = @namaDokter, spesialisasi = @spesialisasi, jenisKelamin = @jenisKelamin, emailDokter = @emailDokter, noTelepon = @noTelepon
                              WHERE idDokter = @idDokter";
 
             NpgsqlParameter[] parameters =
@@ -31,7 +31,7 @@ namespace PBO_B08.App.Context
                 new NpgsqlParameter("@namaDokter", name),
                 new NpgsqlParameter("@spesialisasi", specialize),
                 new NpgsqlParameter("@jenisKelamin", gender),
-                new NpgsqlParameter("@email", email),
+                new NpgsqlParameter("@emailDokter", email),
                 new NpgsqlParameter("@noTelepon", phonenumber)
             };
 

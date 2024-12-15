@@ -37,6 +37,7 @@ namespace PBO_B08.Views
             try
             {
                 dataGridView1.AllowUserToAddRows = false;
+                dataGridView1.RowHeadersVisible = false;
 
                 DataTable dataPasien = C_HalPemeriksaan.listPasien();
                 if (dataPasien == null)
@@ -64,10 +65,53 @@ namespace PBO_B08.Views
 
                 dataGridView1.DataSource = dataPasien;
 
-                if (dataGridView1.Columns["idPasien"] != null) dataGridView1.Columns["idPasien"].Visible = false;
-                if (dataGridView1.Columns["namaPasien"] != null) dataGridView1.Columns["namaPasien"].HeaderText = "Nama Pasien";
+                if (dataGridView1.Columns["idPasien"] != null)
+                {
+                    dataGridView1.Columns["idPasien"].Visible = false;
+                }
 
-                
+                if (dataGridView1.Columns["No"] != null)
+                {
+                    dataGridView1.Columns["No"].HeaderText = "No";
+                    dataGridView1.Columns["No"].Width = 50;
+                    dataGridView1.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    dataGridView1.Columns["No"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["namaPasien"] != null)
+                {
+                    dataGridView1.Columns["namaPasien"].HeaderText = "Nama Pasien";
+                    dataGridView1.Columns["namaPasien"].Width = 250;
+                    dataGridView1.Columns["namaPasien"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["jenisKelamin"] != null)
+                {
+                    dataGridView1.Columns["jenisKelamin"].HeaderText = "Jenis Kelamin";
+                    dataGridView1.Columns["jenisKelamin"].Width = 120;
+                    dataGridView1.Columns["jenisKelamin"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["tanggalLahir"] != null)
+                {
+                    dataGridView1.Columns["tanggalLahir"].HeaderText = "Tanggal Lahir";
+                    dataGridView1.Columns["tanggalLahir"].Width = 120;
+                    dataGridView1.Columns["tanggalLahir"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["noTelepon"] != null)
+                {
+                    dataGridView1.Columns["noTelepon"].HeaderText = "No Telepon";
+                    dataGridView1.Columns["noTelepon"].Width = 130;
+                    dataGridView1.Columns["noTelepon"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dataGridView1.Columns["Alamat"] != null)
+                {
+                    dataGridView1.Columns["Alamat"].HeaderText = "Alamat";
+                    dataGridView1.Columns["Alamat"].Width = 150;
+                    dataGridView1.Columns["Alamat"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
 
                 DataGridViewButtonColumn selectButtonColumn = new DataGridViewButtonColumn
                 {
