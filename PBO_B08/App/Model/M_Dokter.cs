@@ -15,6 +15,12 @@ namespace PBO_B08.App.Model
         [Required]
         public string namaDokter { get; set; }
         [Required]
-        public string emailDokter {  get; set; }
+        public string spesialisasi {  get; set; }
+        [Required]
+        public string jenisKelamin { get; set; }
+        [Required]
+        public string emailDokter { get; set; }
+        [Required]
+        public string noTelepon { get; set; }
     }
 }

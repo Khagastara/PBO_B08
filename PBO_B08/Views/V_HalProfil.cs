@@ -17,8 +17,16 @@ namespace PBO_B08.Views
         {
             InitializeComponent();
 
+            lbNamaDokter.Text = UserSession.LoggedInDoctor;
+            lbSpesialisasi.Text = UserSession.LoggedInSpecialize;
+            lbJenisKelamin.Text = UserSession.LoggedInGender;
+            lbEmail.Text = UserSession.LoggedInEmail;
+            lbNoTelepon.Text = UserSession.LoggedInPhone;
+
             lblUsername.Text = UserSession.LoggedInUsername;
             lblPassword.Text = UserSession.LoggedInPassword;
+
+            lblPassword.Text = new string('*', UserSession.LoggedInPassword.Length);
         }
 
         private void btnEditProfil_Click(object sender, EventArgs e)

@@ -75,7 +75,7 @@ namespace PBO_B08.App.Context
 
         public static bool DoctorExists(int doctorId)
         {
-            string query = "SELECT COUNT(*) FROM Dokter WHERE idDokter = @doctorId";
+            string query = $"SELECT COUNT(*) FROM Dokter WHERE idDokter = @doctorId";
 
             // Set up parameters to prevent SQL injection
             NpgsqlParameter[] parameters =

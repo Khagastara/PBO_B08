@@ -10,17 +10,15 @@ namespace PBO_B08.App.Core
 {
     internal class DataWrapper
     {
-        // Properti credential database dan koneksinya
         private static readonly string DB_HOST = "localhost";
         private static readonly string DB_DATABASE = "PBO_B8";
         private static readonly string DB_USERNAME = "postgres";
-        private static readonly string DB_PASSWORD = "Wadung45";
+        private static readonly string DB_PASSWORD = "082143";
         private static readonly string DB_PORT = "5432";
 
         private static NpgsqlConnection connection;
         private static NpgsqlCommand command;
 
-        // Method open dan close Koneksi
         public static void openConnection()
         {
             connection = new NpgsqlConnection($"Host={DB_HOST};Username={DB_USERNAME};Password={DB_PASSWORD};Database={DB_DATABASE};Port={DB_PORT}");

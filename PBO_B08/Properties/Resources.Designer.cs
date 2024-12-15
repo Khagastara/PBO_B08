@@ -93,6 +93,16 @@ namespace PBO_B08.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HideEye {
+            get {
+                object obj = ResourceManager.GetObject("HideEye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imgbin_patient_icon_blood_donation_icon_png {
             get {
                 object obj = ResourceManager.GetObject("imgbin_patient-icon-blood-donation-icon-png", resourceCulture);
@@ -276,6 +286,16 @@ namespace PBO_B08.Properties {
         internal static System.Drawing.Bitmap Profile_icon3 {
             get {
                 object obj = ResourceManager.GetObject("Profile icon3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ShowEye {
+            get {
+                object obj = ResourceManager.GetObject("ShowEye", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -37,8 +37,6 @@ namespace PBO_B08.Views
             panel1.Controls.Clear();
             panel1.Controls.Add(v_Homepage);
             //V_Homepage.Dock = DockStyle.Fill;
-
-
         }
 
         private void btnPasien_Click(object sender, EventArgs e)

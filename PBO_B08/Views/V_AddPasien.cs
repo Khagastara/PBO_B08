@@ -53,7 +53,7 @@ namespace PBO_B08.Views
             }
             else
             {
-                cmbJenisKelamin.SelectedIndex = -1; // If no match, clear selection
+                cmbJenisKelamin.SelectedIndex = -1;
             }
             dateTglLahir.Value = m_Pasien.tanggalLahir;
             txtNoTelepon.Text = m_Pasien.noTelepon;

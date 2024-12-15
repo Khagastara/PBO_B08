@@ -20,39 +20,38 @@ namespace PBO_B08.App.Context
             return userData;
         }
 
-        private void ExecuteNonQuery(string query, NpgsqlParameter[] parameters)
+        public static void UpdateUserProfile(string name, string specialize, string gender, string email, string phonenumber)
         {
-            using (var conn = new NpgsqlConnection("Host=LocalHost;Port=5432;Username=postgres;Password=Wadung45;Database=PBO_B8"))
-            {
-                try
-                {
-                    conn.Open();
-                    using (var cmd = new NpgsqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddRange(parameters);
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Database error: {ex.Message}", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-        public void UpdateUserProfile(int doctorId, string newUsername, string newPassword)
-        {
-            string query = @"UPDATE akun 
-                     SET username = @username, password = @password 
-                     WHERE iddokter = @idDokter";
+            string query = @"UPDATE Dokter
+                             SET namaDokter = @namaDokter, spesialisasi = @spesialisasi, jenisKelamin = @jenisKelamin, email = @email, noTelepon = @noTelepon
+                             WHERE idDokter = @idDokter";
 
             NpgsqlParameter[] parameters =
             {
-        new NpgsqlParameter("@username", newUsername),
-        new NpgsqlParameter("@password", newPassword),
-        new NpgsqlParameter("@idDokter", doctorId)
-    };
+                new NpgsqlParameter("@namaDokter", name),
+                new NpgsqlParameter("@spesialisasi", specialize),
+                new NpgsqlParameter("@jenisKelamin", gender),
+                new NpgsqlParameter("@email", email),
+                new NpgsqlParameter("@noTelepon", phonenumber)
+            };
 
-            ExecuteNonQuery(query, parameters);
+            commandExecutor(query, parameters);
+        }
+
+        public static void UpdateAccount(int doctorId, string newUsername, string newPassword)
+        {
+            string query = @"UPDATE akun 
+                             SET username = @username, password = @password 
+                             WHERE iddokter = @idDokter";
+
+            NpgsqlParameter[] parameters =
+            {
+                new NpgsqlParameter("@username", newUsername),
+                new NpgsqlParameter("@password", newPassword),
+                new NpgsqlParameter("@idDokter", doctorId)
+            };
+
+            commandExecutor(query, parameters);
         }
 
         public M_Akun Validate(string username, string password)
@@ -60,9 +59,10 @@ namespace PBO_B08.App.Context
             M_Akun accountLogin = null;
             try
             {
-                string query = @"SELECT d.iddokter, d.namadokter, d.emaildokter, a.username, a.password 
-                         FROM dokter d JOIN akun a ON d.iddokter = a.iddokter 
-                         WHERE Username = @username AND Password = @password LIMIT 1";
+                string query = @"SELECT d.iddokter, d.namadokter, d.spesialisasi, d.jenisKelamin, d.emaildokter, d.noTelepon,
+                                 a.username, a.password 
+                                 FROM dokter d JOIN akun a ON d.iddokter = a.iddokter 
+                                 WHERE Username = @username AND Password = @password LIMIT 1";
 
                 NpgsqlParameter[] parameters =
                 {
@@ -74,10 +74,23 @@ namespace PBO_B08.App.Context
                 {
                     if (reader.Read())
                     {
+                        M_Dokter userLogin = new M_Dokter();
+                        userLogin.namaDokter = (string)reader["namadokter"];
+                        userLogin.spesialisasi = (string)reader["spesialisasi"];
+                        userLogin.jenisKelamin = (string)reader["jenisKelamin"];
+                        userLogin.emailDokter = (string)reader["emaildokter"];
+                        userLogin.noTelepon = (string)reader["noTelepon"];
+
+                        UserSession.LoggedInDoctor = userLogin.namaDokter;
+                        UserSession.LoggedInSpecialize = userLogin.spesialisasi;
+                        UserSession.LoggedInGender = userLogin.jenisKelamin;
+                        UserSession.LoggedInEmail = userLogin.emailDokter;
+                        UserSession.LoggedInPhone = userLogin.noTelepon;
+
                         accountLogin = new M_Akun(username, password);
+                        accountLogin.idDokter = (int)reader["iddokter"];
                         accountLogin.username = (string)reader["username"];
                         accountLogin.password = (string)reader["password"];
-                        accountLogin.idDokter = (int)reader["iddokter"];
 
                         UserSession.LoggedInDoctorId = accountLogin.idDokter;
                         UserSession.LoggedInUsername = accountLogin.username; 

@@ -40,9 +40,6 @@
     <Compile Update="Views\V_Logout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\V_LupaPass.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Views\V_PilihPasien.cs">
       <SubType>UserControl</SubType>
     </Compile>

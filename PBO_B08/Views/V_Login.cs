@@ -16,12 +16,14 @@ namespace PBO_B08
 {
     public partial class V_Login : Form
     {
+        private bool isPasswordHidden = true;
+        private string enteredPassword = string.Empty;
+
         public V_Login()
         {
             InitializeComponent();
 
             this.AcceptButton = btnLogin;
-
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -67,6 +69,23 @@ namespace PBO_B08
             }
         }
 
+        private void btnEye_Click_1(object sender, EventArgs e)
+        {
+            if (isPasswordHidden)
+            {
+                btnEye.Image = Properties.Resources.ShowEye;
+                passwordTextBox.PasswordChar = '\0';
+                isPasswordHidden = false;
+            }
+            else
+            {
+                btnEye.Image = Properties.Resources.HideEye;
+                passwordTextBox.PasswordChar = '*';
+                isPasswordHidden = true;
+            }
+        }
+
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -105,7 +124,6 @@ namespace PBO_B08
                 V_LupaPass v_LupaPass = new V_LupaPass();
                 v_LupaPass.Show();
             }
-            // Jika pengguna memilih No, tidak ada tindakan lebih lanjut (form tidak ditampilkan)
         }
 
 
