@@ -17,20 +17,10 @@ namespace PBO_B08.Views
         public V_HalUtama()
         {
             InitializeComponent();
+            ShowUserControl(new V_Homepage());
         }
 
         private void V_HalUtama_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void V_HalUtama_Resize(object sender, EventArgs e)
-        {
-            
-        }
-
-
-        private void btnHomePage_Click(object sender, EventArgs e)
         {
 
         }
@@ -42,6 +32,12 @@ namespace PBO_B08.Views
 
         private void btnHomepage_Click_1(object sender, EventArgs e)
         {
+            V_Homepage v_Homepage = new V_Homepage();
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(v_Homepage);
+            //V_Homepage.Dock = DockStyle.Fill;
+
 
         }
 

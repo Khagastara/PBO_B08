@@ -7,6 +7,9 @@
     <Compile Update="customeToolBox\customePanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="Views\V_Homepage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Views\V_EditProfil.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -35,6 +38,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\V_Logout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\V_LupaPass.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\V_PilihPasien.cs">
