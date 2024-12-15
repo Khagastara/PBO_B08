@@ -73,5 +73,17 @@ namespace PBO_B08.App.Context
 
             commandExecutor(query, parameters);
         }
+
+        public static int TotalPasien()
+        {
+            string query = $"SELECT COUNT(*) FROM {table}";
+
+            // Menjalankan query dan mendapatkan jumlah
+            object result = scalarExecutor(query);
+
+            // Mengonversi hasil ke integer dan mengembalikan
+            return Convert.ToInt32(result);
+        }
+
     }
 }

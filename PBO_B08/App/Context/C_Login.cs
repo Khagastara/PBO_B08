@@ -22,7 +22,7 @@ namespace PBO_B08.App.Context
 
         private void ExecuteNonQuery(string query, NpgsqlParameter[] parameters)
         {
-            using (var conn = new NpgsqlConnection("Host=LocalHost;Port=5432;Username=postgres;Password=082143;Database=PBO_B8"))
+            using (var conn = new NpgsqlConnection("Host=LocalHost;Port=5432;Username=postgres;Password=Wadung45;Database=PBO_B8"))
             {
                 try
                 {

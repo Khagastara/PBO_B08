@@ -14,7 +14,7 @@ namespace PBO_B08.App.Core
         private static readonly string DB_HOST = "localhost";
         private static readonly string DB_DATABASE = "PBO_B8";
         private static readonly string DB_USERNAME = "postgres";
-        private static readonly string DB_PASSWORD = "082143";
+        private static readonly string DB_PASSWORD = "Wadung45";
         private static readonly string DB_PORT = "5432";
 
         private static NpgsqlConnection connection;
@@ -74,6 +74,33 @@ namespace PBO_B08.App.Core
                 throw new Exception(e.Message);
             }
         }
+
+        public static object scalarExecutor(string query, NpgsqlParameter[] parameters = null)
+        {
+            try
+            {
+                openConnection();
+                command.CommandText = query;
+
+                if (parameters != null)
+                {
+                    command.Parameters.AddRange(parameters);
+                    command.Prepare();
+                }
+
+                // Menjalankan query dan mendapatkan nilai tunggal
+                object result = command.ExecuteScalar();
+                closeConnection();
+
+                return result;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+
         public static NpgsqlDataReader ExecuteReaderCommand(string query, NpgsqlParameter[] parameters = null)
         {
             openConnection();

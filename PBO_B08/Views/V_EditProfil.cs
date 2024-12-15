@@ -27,9 +27,9 @@ namespace PBO_B08.Views
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            string newUsername = txtUsername.Text;  
-            string newPassword = txtPassword.Text; 
-            int doctorId = UserSession.LoggedInDoctorId;  
+            string newUsername = txtUsername.Text;
+            string newPassword = txtPassword.Text;
+            int doctorId = UserSession.LoggedInDoctorId;
 
             C_Login loginController = new C_Login();
             loginController.UpdateUserProfile(doctorId, newUsername, newPassword);
@@ -45,6 +45,11 @@ namespace PBO_B08.Views
             V_HalUtama.panel1.Controls.Clear();
             V_HalUtama.panel1.Controls.Add(profilform);
             profilform.Dock = DockStyle.Fill;
+        }
+
+        private void V_EditProfil_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

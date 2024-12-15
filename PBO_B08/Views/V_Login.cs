@@ -21,6 +21,7 @@ namespace PBO_B08
             InitializeComponent();
 
             this.AcceptButton = btnLogin;
+
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -31,12 +32,6 @@ namespace PBO_B08
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        public void ClearTextBox()
-        {
-            usernameTextBox.Text = "";
-            passwordTextBox.Text = "";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -52,6 +47,9 @@ namespace PBO_B08
 
                     this.Hide();
                     V_HalUtama halamanUtama = new V_HalUtama();
+
+                    halamanUtama.ShowUserControl(new V_Homepage());
+
                     halamanUtama.Show();
                 }
                 catch (Exception ex)
@@ -69,32 +67,54 @@ namespace PBO_B08
             }
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            // Tampilkan dialog konfirmasi sebelum keluar
-            DialogResult result = MessageBox.Show("Apakah Anda yakin ingin keluar dari aplikasi?",
-                                                  "Konfirmasi Keluar",
-                                                  MessageBoxButtons.YesNo,
-                                                  MessageBoxIcon.Question);
-
-            // Jika pengguna memilih "Yes", keluar dari aplikasi
-            if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
-
-        private void btnLupaPass_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            {
+                DialogResult result = MessageBox.Show("Apakah Anda yakin ingin keluar dari aplikasi?",
+                                                      "Konfirmasi Keluar",
+                                                      MessageBoxButtons.YesNo,
+                                                      MessageBoxIcon.Question);
+
+                // Jika "Yes", keluar dari aplikasi
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+        }
+
+        private void btnlupapw_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Apakah Anda yakin ingin melanjutkan ke halaman Lupa Password?",
+                                                  "Konfirmasi",
+                                                  MessageBoxButtons.YesNo,
+                                                  MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                V_LupaPass v_LupaPass = new V_LupaPass();
+                v_LupaPass.Show();
+            }
+            // Jika pengguna memilih No, tidak ada tindakan lebih lanjut (form tidak ditampilkan)
+        }
+
+
+        private void usernameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
