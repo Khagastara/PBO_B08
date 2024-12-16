@@ -130,5 +130,93 @@ namespace PBO_B08.Views
             V_HalUtama.panel1.Controls.Add(v_pilihPasien);
             v_pilihPasien.Dock = DockStyle.Fill;
         }
+
+        private void btnTelusuriRekam(object sender, EventArgs e)
+        {
+            string namaPasien = txtTelusuri.Text?.Trim();
+            if (string.IsNullOrEmpty(namaPasien))
+            {
+                LoadDataRekam();
+                return;
+            }
+
+            try
+            {
+                DataTable dataRekam = C_HalPemeriksaan.searchRekamByName(namaPasien);
+
+                if (dataRekam == null || dataRekam.Rows.Count == 0)
+                {
+                    MessageBox.Show("Tidak ditemukan data rekam medis dengan nama pasien tersebut.",
+                                    "Hasil Pencarian",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+                    return;
+                }
+
+                dgvRekamMedis.Columns.Clear();
+
+                DataColumn noColumn = new DataColumn("No", typeof(int));
+                dataRekam.Columns.Add(noColumn);
+
+                for (int i = 0; i < dataRekam.Rows.Count; i++)
+                {
+                    dataRekam.Rows[i]["No"] = i + 1;
+                }
+
+                dataRekam.Columns["No"].SetOrdinal(0);
+
+                dgvRekamMedis.DataSource = dataRekam;
+
+                if (dgvRekamMedis.Columns["No"] != null)
+                {
+                    dgvRekamMedis.Columns["No"].HeaderText = "No";
+                    dgvRekamMedis.Columns["No"].Width = 50;
+                    dgvRekamMedis.Columns["No"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                }
+
+                if (dgvRekamMedis.Columns["namaPasien"] != null)
+                {
+                    dgvRekamMedis.Columns["namaPasien"].HeaderText = "Nama Pasien";
+                    dgvRekamMedis.Columns["namaPasien"].Width = 150;
+                }
+
+                if (dgvRekamMedis.Columns["namaDokter"] != null)
+                {
+                    dgvRekamMedis.Columns["namaDokter"].HeaderText = "Nama Dokter";
+                    dgvRekamMedis.Columns["namaDokter"].Width = 150;
+                }
+
+                if (dgvRekamMedis.Columns["tanggalPemeriksaan"] != null)
+                {
+                    dgvRekamMedis.Columns["tanggalPemeriksaan"].HeaderText = "Tanggal Pemeriksaan";
+                    dgvRekamMedis.Columns["tanggalPemeriksaan"].Width = 120;
+                }
+
+                if (dgvRekamMedis.Columns["hasilPemeriksaan"] != null)
+                {
+                    dgvRekamMedis.Columns["hasilPemeriksaan"].HeaderText = "Hasil Pemeriksaan";
+                    dgvRekamMedis.Columns["hasilPemeriksaan"].Width = 200;
+                }
+
+                if (dgvRekamMedis.Columns["Diagnosis"] != null)
+                {
+                    dgvRekamMedis.Columns["Diagnosis"].HeaderText = "Diagnosis";
+                    dgvRekamMedis.Columns["Diagnosis"].Width = 120;
+                }
+
+                if (dgvRekamMedis.Columns["Obat"] != null)
+                {
+                    dgvRekamMedis.Columns["Obat"].HeaderText = "Daftar Obat";
+                    dgvRekamMedis.Columns["Obat"].Width = 300;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Terjadi kesalahan saat melakukan pencarian: {ex.Message}",
+                                "Error",
+                 MessageBoxButtons.OK,
+                 MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -73,6 +73,28 @@ namespace PBO_B08.App.Context
             return dataPasien;
         }
 
+        public static DataTable searchRekamByName(string namaPasien)
+        {
+            string query = @"
+                SELECT pa.namaPasien, d.namaDokter, pe.tanggalPemeriksaan, hp.hasilPemeriksaan, hp.Diagnosis, 
+                STRING_AGG(o.namaObat, ', ') AS Obat
+                FROM Pemeriksaan pe
+                JOIN Pasien pa ON pa.idPasien = pe.idPasien
+                JOIN Dokter d ON d.idDokter = pe.idDokter
+                JOIN hasilPemeriksaan hp ON hp.idRekam = pe.idRekam
+                JOIN obat o ON o.idObat = hp.idObat
+                WHERE pa.namaPasien ILIKE @namaPasien
+                GROUP BY pa.namaPasien, d.namaDokter, pe.tanggalPemeriksaan, hp.hasilPemeriksaan, hp.Diagnosis
+                ORDER BY pe.tanggalPemeriksaan DESC";
+
+            NpgsqlParameter[] parameters =
+            {
+                new NpgsqlParameter("@namaPasien", $"%{namaPasien}%")
+            };
+
+            return queryExecutor(query, parameters);
+        }
+
         public static bool DoctorExists(int doctorId)
         {
             string query = $"SELECT COUNT(*) FROM Dokter WHERE idDokter = @doctorId";
