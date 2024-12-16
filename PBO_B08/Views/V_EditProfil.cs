@@ -32,8 +32,6 @@ namespace PBO_B08.Views
 
             txtUsername.Text = UserSession.LoggedInUsername;
             txtPassword.Text = UserSession.LoggedInPassword;
-
-            txtPassword.Text = new string('*', UserSession.LoggedInPassword.Length);
         }
 
         private void LoadSpesialisasi()
@@ -118,13 +116,14 @@ namespace PBO_B08.Views
             if (isPasswordHidden)
             {
                 btnEye.Image = Properties.Resources.ShowEye;
+                txtPassword.PasswordChar = '\0';
                 txtPassword.Text = UserSession.LoggedInPassword;
                 isPasswordHidden = false;
             }
             else
             {
                 btnEye.Image = Properties.Resources.HideEye;
-                txtPassword.Text = new string('*', UserSession.LoggedInPassword.Length);
+                txtPassword.PasswordChar = '*';
                 isPasswordHidden = true;
             }
         }

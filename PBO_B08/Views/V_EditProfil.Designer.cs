@@ -235,6 +235,7 @@
             txtPassword.Location = new Point(12, 11);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(344, 30);
             txtPassword.TabIndex = 1;
             // 
