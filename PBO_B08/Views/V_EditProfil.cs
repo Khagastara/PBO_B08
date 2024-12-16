@@ -58,6 +58,18 @@ namespace PBO_B08.Views
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
+        
+        if (string.IsNullOrWhiteSpace(txtNamaDokter.Text) ||
+            cmbSpesialisasi.SelectedItem == null ||
+            cmbJenisKelamin.SelectedItem == null ||
+            string.IsNullOrWhiteSpace(txtEmail.Text) ||
+            string.IsNullOrWhiteSpace(txtNoTelepon.Text) ||
+            string.IsNullOrWhiteSpace(txtUsername.Text) ||
+            string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                MessageBox.Show("Semua data harus diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             int doctorId = UserSession.LoggedInDoctorId;
             string name = txtNamaDokter.Text;
             string specialize = cmbSpesialisasi.SelectedItem.ToString();
