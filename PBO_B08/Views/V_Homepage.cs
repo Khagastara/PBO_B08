@@ -24,12 +24,10 @@ namespace PBO_B08.Views
         {
             try
             {
-                // Memanggil TotalPasien untuk mendapatkan jumlah pasien
-                int totalPasien = C_Pasien.TotalPasien();
+                int totalPasien = C_Homepage.TotalPasien();
                 label_jumlahpasien.Text = $"{totalPasien}";
 
-                // Memanggil TotalRekamMedis untuk mendapatkan jumlah rekam medis
-                int totalRekamMedis = C_HalPemeriksaan.TotalRekamMedis();
+                int totalRekamMedis = C_Homepage.TotalRekamMedis();
                 label_hasilpemeriksaan.Text = $"{totalRekamMedis}";
             }
             catch (Exception ex)

@@ -220,11 +220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mikoi\\Source\\Repos\\PBO_B08AB\\PBO_B08\\PBO_B08.csproj",
+      "projectUniqueName": "C:\\Users\\mikoi\\Source\\Repos\\PBO_B08\\PBO_B08\\PBO_B08.csproj",
       "projectName": "PBO_B08",
-      "projectPath": "C:\\Users\\mikoi\\Source\\Repos\\PBO_B08AB\\PBO_B08\\PBO_B08.csproj",
+      "projectPath": "C:\\Users\\mikoi\\Source\\Repos\\PBO_B08\\PBO_B08\\PBO_B08.csproj",
       "packagesPath": "C:\\Users\\mikoi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mikoi\\Source\\Repos\\PBO_B08AB\\PBO_B08\\obj\\",
+      "outputPath": "C:\\Users\\mikoi\\Source\\Repos\\PBO_B08\\PBO_B08\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mikoi\\AppData\\Roaming\\NuGet\\NuGet.Config",

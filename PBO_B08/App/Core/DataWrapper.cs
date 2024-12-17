@@ -13,7 +13,7 @@ namespace PBO_B08.App.Core
         private static readonly string DB_HOST = "localhost";
         private static readonly string DB_DATABASE = "PBO_B8";
         private static readonly string DB_USERNAME = "postgres";
-        private static readonly string DB_PASSWORD = "082143";
+        private static readonly string DB_PASSWORD = "1";
         private static readonly string DB_PORT = "5432";
 
         private static NpgsqlConnection connection;

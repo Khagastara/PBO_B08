@@ -82,14 +82,14 @@ namespace PBO_B08.Views
 
             try
             {
-                C_Login.UpdateUserProfile(name, specialize, gender, email, phonenumber);
+                C_Profile.UpdateUserProfile(name, specialize, gender, email, phonenumber);
                 UserSession.LoggedInDoctor = name;
                 UserSession.LoggedInSpecialize = specialize;
                 UserSession.LoggedInGender = gender;
                 UserSession.LoggedInEmail = email;
                 UserSession.LoggedInPhone = phonenumber;
 
-                C_Login.UpdateAccount(doctorId, newUsername, newPassword);
+                C_Profile.UpdateAccount(doctorId, newUsername, newPassword);
 
                 UserSession.LoggedInUsername = newUsername;
                 UserSession.LoggedInPassword = newPassword;

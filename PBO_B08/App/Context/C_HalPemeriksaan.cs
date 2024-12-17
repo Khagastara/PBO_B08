@@ -99,7 +99,6 @@ namespace PBO_B08.App.Context
         {
             string query = $"SELECT COUNT(*) FROM Dokter WHERE idDokter = @doctorId";
 
-            // Set up parameters to prevent SQL injection
             NpgsqlParameter[] parameters =
             {
                 new NpgsqlParameter("@doctorId", NpgsqlTypes.NpgsqlDbType.Integer) { Value = doctorId }
@@ -148,14 +147,6 @@ namespace PBO_B08.App.Context
             };
 
             commandExecutor(query, parameters);
-        }
-
-        // Method untuk menghitung total hasil rekam medis
-        public static int TotalRekamMedis()
-        {
-            string query = "SELECT COUNT(*) FROM hasilPemeriksaan";
-            object result = scalarExecutor(query);
-            return result != null ? Convert.ToInt32(result) : 0;
         }
     }
 } 
