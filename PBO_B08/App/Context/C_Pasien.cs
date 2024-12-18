@@ -33,7 +33,7 @@ namespace PBO_B08.App.Context
                 new NpgsqlParameter("@idPasien", NpgsqlTypes.NpgsqlDbType.Integer){Value = idPasien}
             };
 
-            DataTable dataPasien = queryExecutor(query);
+            DataTable dataPasien = queryExecutor(query, parameters);
             return dataPasien;
         }
 
