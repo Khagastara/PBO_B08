@@ -64,6 +64,31 @@ namespace PBO_B08.App.Context
             return dataPasien;
         }
 
+        public static void updatePasien(M_Pasien pasien)
+        {
+            string query = $@"
+        UPDATE {table}
+        SET 
+            namaPasien = @namaPasien, 
+            jenisKelamin = @jenisKelamin, 
+            tanggalLahir = @tanggalLahir, 
+            noTelepon = @noTelepon, 
+            alamat = @alamat
+        WHERE idPasien = @idPasien";
+
+            NpgsqlParameter[] parameters =
+            {
+                new NpgsqlParameter("@idPasien", pasien.idPasien),
+                new NpgsqlParameter("@namaPasien", pasien.namaPasien),
+                new NpgsqlParameter("@jenisKelamin", pasien.jenisKelamin),
+                new NpgsqlParameter("@tanggalLahir", pasien.tanggalLahir),
+                new NpgsqlParameter("@noTelepon", pasien.noTelepon),
+                new NpgsqlParameter("@alamat", pasien.Alamat)
+            };
+
+            commandExecutor(query, parameters);
+        }
+
         public static void deletePasien(int idPasien)
         {
             string query = $"DELETE FROM {table} WHERE idPasien = @idPasien";

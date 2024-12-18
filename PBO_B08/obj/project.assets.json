@@ -215,19 +215,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mikoi\\.nuget\\packages\\": {}
+    "C:\\Users\\Owner\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mikoi\\Source\\Repos\\PBO_B08\\PBO_B08\\PBO_B08.csproj",
+      "projectUniqueName": "C:\\Users\\Owner\\source\\repos\\PBO_B08\\PBO_B08\\PBO_B08.csproj",
       "projectName": "PBO_B08",
-      "projectPath": "C:\\Users\\mikoi\\Source\\Repos\\PBO_B08\\PBO_B08\\PBO_B08.csproj",
-      "packagesPath": "C:\\Users\\mikoi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mikoi\\Source\\Repos\\PBO_B08\\PBO_B08\\obj\\",
+      "projectPath": "C:\\Users\\Owner\\source\\repos\\PBO_B08\\PBO_B08\\PBO_B08.csproj",
+      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Owner\\source\\repos\\PBO_B08\\PBO_B08\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mikoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -286,7 +286,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

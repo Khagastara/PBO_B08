@@ -106,7 +106,7 @@ namespace PBO_B08.Views
 
                 if (IsEditMode)
                 {
-                    //C_Pasien.updatePasien(pasien);
+                    C_Pasien.updatePasien(pasien);
                     MessageBox.Show("Pasien telah Diedit.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else

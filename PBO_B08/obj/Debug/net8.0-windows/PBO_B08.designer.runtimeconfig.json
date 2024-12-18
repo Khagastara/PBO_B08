@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\mikoi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Owner\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\mikoi\\.nuget\\packages"
     ],
     "configProperties": {
