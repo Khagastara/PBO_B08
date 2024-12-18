@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PBO_B08.App.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,16 +25,7 @@ namespace PBO_B08.Views
 
         private void btnYa_Click(object sender, EventArgs e)
         {
-            V_Login v_login = new V_Login();
-            this.Hide();
-            v_login.Show();
-            foreach (Form form in Application.OpenForms)
-            {
-                if (form is not V_Login)
-                {
-                    form.Hide();
-                }
-            }
+            C_logout.Logout();
         }
     }
 }
