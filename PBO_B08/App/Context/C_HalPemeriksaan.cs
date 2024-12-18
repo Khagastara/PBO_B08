@@ -99,7 +99,6 @@ namespace PBO_B08.App.Context
         {
             string query = $"SELECT COUNT(*) FROM Dokter WHERE idDokter = @doctorId";
 
-            // Set up parameters to prevent SQL injection
             NpgsqlParameter[] parameters =
             {
                 new NpgsqlParameter("@doctorId", NpgsqlTypes.NpgsqlDbType.Integer) { Value = doctorId }
